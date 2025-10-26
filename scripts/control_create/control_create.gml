@@ -6,4 +6,6 @@ function control_create(){
 		SELL
 	}
 	scene = SCENE.TITLE
+	
+	deck = []
 }
