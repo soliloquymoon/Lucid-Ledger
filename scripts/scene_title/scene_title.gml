@@ -1,4 +1,6 @@
 function scene_title(){
+	draw_set_color(0)
+	draw_text(10, 10, "title scene")
 	// draw title background
 	// TODO
 	
