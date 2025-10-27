@@ -1,6 +1,6 @@
 function control_draw(){
 	draw_set_font(Font1)
-	draw_clear(c_white)
+	draw_clear(c_white) // bg color
 	draw_set_color(0)
 	//draw_text(10, 10, "Hello World!")
 	
