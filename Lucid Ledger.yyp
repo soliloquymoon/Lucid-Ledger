@@ -4,6 +4,7 @@
   "name": "Lucid Ledger",
   "resources": [
     {"id":{"name":"control_end","path":"scripts/control_end/control_end.yy",},"order":2,},
+    {"id":{"name":"scene_main","path":"scripts/scene_main/scene_main.yy",},"order":4,},
     {"id":{"name":"path_separator","path":"scripts/path_separator/path_separator.yy",},"order":11,},
     {"id":{"name":"control_create","path":"scripts/control_create/control_create.yy",},"order":0,},
     {"id":{"name":"card_import_all","path":"scripts/card_import_all/card_import_all.yy",},"order":2,},
@@ -11,6 +12,7 @@
     {"id":{"name":"scene_market","path":"scripts/scene_market/scene_market.yy",},"order":1,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"control_draw","path":"scripts/control_draw/control_draw.yy",},"order":1,},
+    {"id":{"name":"draw_button_size","path":"scripts/draw_button_size/draw_button_size.yy",},"order":12,},
     {"id":{"name":"scene_sell","path":"scripts/scene_sell/scene_sell.yy",},"order":3,},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"order":2,},
     {"id":{"name":"reset","path":"scripts/reset/reset.yy",},"order":4,},
@@ -22,6 +24,7 @@
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":0,},
     {"id":{"name":"control_step","path":"scripts/control_step/control_step.yy",},"order":3,},
     {"id":{"name":"button_area","path":"scripts/button_area/button_area.yy",},"order":7,},
+    {"id":{"name":"scene_transition","path":"scripts/scene_transition/scene_transition.yy",},"order":13,},
     {"id":{"name":"mouse_rectangle","path":"scripts/mouse_rectangle/mouse_rectangle.yy",},"order":6,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],

@@ -3,7 +3,8 @@ function control_create(){
 		TITLE,
 		MARKET,
 		EDIT,
-		SELL
+		SELL,
+		MAIN
 	}
 	scene = SCENE.TITLE
 	money = 0 // Lunite

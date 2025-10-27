@@ -8,6 +8,9 @@ function control_draw(){
 		case SCENE.TITLE:
 			scene_title()
 			break
+		case SCENE.MAIN:
+			scene_main()
+			break
 		case SCENE.MARKET:
 			scene_market()
 			break
