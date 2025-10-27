@@ -10,4 +10,7 @@ function scene_title(){
 	
 	// draw start button
 	if (draw_button_size(1366 / 2 - 60 , 500 , 120, 100, "Start")) scene_transition(SCENE.MAIN)
+	
+	// card editor button
+	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Card Maker")) scene_transition(SCENE.CARDEDITOR)
 }

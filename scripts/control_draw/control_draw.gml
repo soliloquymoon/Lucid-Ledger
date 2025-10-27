@@ -20,5 +20,9 @@ function control_draw(){
 		case SCENE.SELL:
 			scene_sell()
 			break
+			
+		case SCENE.CARDEDITOR:
+			scene_card_editor()
+			break
 	}
 }

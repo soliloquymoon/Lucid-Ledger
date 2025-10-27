@@ -1,10 +1,14 @@
 function control_create(){
+	widget_set_owner(string(int64(window_handle())))
+	
 	enum SCENE {
 		TITLE,
 		MARKET,
 		EDIT,
 		SELL,
-		MAIN
+		MAIN,
+		
+		CARDEDITOR
 	}
 	enum EFFECT {
 		TEST1,
@@ -17,4 +21,7 @@ function control_create(){
 	loan_amount = 0
 	loan_due_date = -1
 	deck = []
+	
+	card_in_edit = -100
+	edit_name_field = -200
 }
