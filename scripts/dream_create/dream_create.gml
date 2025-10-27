@@ -3,4 +3,5 @@ function dream_create(){
 	tags = []
 	unlocks = [1, 0, 0, 0]
 	value = 0
+	stability = 100
 }

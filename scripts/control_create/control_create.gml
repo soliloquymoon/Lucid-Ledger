@@ -6,6 +6,10 @@ function control_create(){
 		SELL,
 		MAIN
 	}
+	enum EFFECT {
+		TEST1,
+		TEST2
+	}
 	scene = SCENE.TITLE
 	money = 0 // Lunite
 	day_counter = 0
