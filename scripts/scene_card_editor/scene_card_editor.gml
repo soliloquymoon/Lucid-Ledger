@@ -14,6 +14,15 @@ function scene_card_editor(){
 	
 	card_draw(1366 / 2 - 200, 300, card_in_edit)
 	
+	if (draw_button_size(1366 / 2 + 100, 140, 200, 50, "Import Card")) {
+		var temp_card = card_import()
+		if (temp_card != -1) {
+			instance_destroy(card_in_edit)
+			card_in_edit = temp_card
+			edit_name_field.str = temp_card.card_name
+		}
+	}
+	
 	if (draw_button_size(1366 / 2 + 100, 200, 200, 50, "Import Icon")) import_icon(card_in_edit)
 	
 	draw_set_color(0)

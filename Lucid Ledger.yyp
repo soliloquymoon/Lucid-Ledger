@@ -6,6 +6,7 @@
     {"id":{"name":"control_end","path":"scripts/control_end/control_end.yy",},"order":2,},
     {"id":{"name":"draw_number_adjust","path":"scripts/draw_number_adjust/draw_number_adjust.yy",},"order":15,},
     {"id":{"name":"card_draw","path":"scripts/card_draw/card_draw.yy",},"order":3,},
+    {"id":{"name":"card_import","path":"scripts/card_import/card_import.yy",},"order":5,},
     {"id":{"name":"scene_main","path":"scripts/scene_main/scene_main.yy",},"order":4,},
     {"id":{"name":"path_separator","path":"scripts/path_separator/path_separator.yy",},"order":11,},
     {"id":{"name":"control_create","path":"scripts/control_create/control_create.yy",},"order":0,},
