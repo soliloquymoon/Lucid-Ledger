@@ -11,6 +11,7 @@
     {"id":{"name":"scene_main","path":"scripts/scene_main/scene_main.yy",},"order":4,},
     {"id":{"name":"path_separator","path":"scripts/path_separator/path_separator.yy",},"order":6,},
     {"id":{"name":"control_create","path":"scripts/control_create/control_create.yy",},"order":0,},
+    {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"order":4,},
     {"id":{"name":"text_edit_draw","path":"scripts/text_edit_draw/text_edit_draw.yy",},"order":1,},
     {"id":{"name":"card_import_all","path":"scripts/card_import_all/card_import_all.yy",},"order":2,},
     {"id":{"name":"libdlgmod","path":"extensions/libdlgmod/libdlgmod.yy",},"order":0,},
