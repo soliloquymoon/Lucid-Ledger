@@ -1,6 +1,6 @@
 function scene_card_editor(){
 	draw_set_color(0)
-	draw_text(10, 10, "card editor scene")
+	//draw_text(10, 10, "card editor scene")
 	
 	if (!instance_exists(card_in_edit)) card_in_edit = instance_create_depth(0, 0, 0, obj_card)
 	if (!instance_exists(edit_name_field)) {
