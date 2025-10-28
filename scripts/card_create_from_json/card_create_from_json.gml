@@ -1,4 +1,4 @@
-function card_create_from_json(card, fn){
+function card_create_from_json(fn){
 	if (!file_exists(fn)) {
 		show_debug_message("requested file does not exist!")
 		return -1
@@ -20,19 +20,36 @@ function card_create_from_json(card, fn){
 	}
 	show_debug_message(json_map)
 	
-	try {
-		card.icon_identifier = variable_struct_get(json_map, "icon")
-		if (card.icon_identifier != "icon_none" && file_exists(working_directory + "card_icons" + path_separator() + card.icon_identifier)) card.icon_sprite = sprite_add(working_directory + "card_icons" + path_separator() + card.icon_identifier, 0, 0, 0, 0, 0)
+	var is_list = !is_struct(json_map)
+	var return_list = []
 	
-		card.card_name = variable_struct_get(json_map, "name")
-		card.emotion_effect = variable_struct_get(json_map, "emotionEffect")
-		card.emotion_effect_method = variable_struct_get(json_map, "emotionEffectMethod")
-		card.clarity_effect = variable_struct_get(json_map, "clarityEffect")
-		card.clarity_effect_method = variable_struct_get(json_map, "clarityEffectMethod")
+	try {
+		if (is_list) {
+			var card_list = json_map
+			for (var i = 0; i < array_length(card_list); i++) {
+				var card = instance_create_depth(0, 0, 0, obj_card)
+				card.card_name = variable_struct_get(card_list[i], "name")
+				card.card_desc = variable_struct_get(card_list[i], "description")
+				card.icon_sprite = variable_struct_get(card_list[i], "icon_index")
+				card.emotion_effect = variable_struct_get(card_list[i].effects, "emotion")
+				card.clarity_effect = variable_struct_get(card_list[i].effects, "clarity")
+				card.stability_effect = variable_struct_get(card_list[i].effects, "stability")
+				array_push(return_list, card)
+			}
+		} else {
+			var card = instance_create_depth(0, 0, 0, obj_card)
+			card.card_name = variable_struct_get(json_map, "name")
+			card.card_desc = variable_struct_get(json_map, "description")
+			card.icon_sprite = variable_struct_get(json_map, "icon_index")
+			card.emotion_effect = variable_struct_get(json_map.effects, "emotion")
+			card.clarity_effect = variable_struct_get(json_map.effects, "clarity")
+			card.stability_effect = variable_struct_get(json_map.effects, "stability")
+			array_push(return_list, card)
+		}
 	}
 	catch (e) {
 		show_message(string(e))
 		return -1
 	}
-	return 0
+	return return_list
 }

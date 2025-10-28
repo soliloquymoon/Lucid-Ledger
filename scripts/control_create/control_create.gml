@@ -24,4 +24,5 @@ function control_create(){
 	
 	card_in_edit = -100
 	edit_name_field = -200
+	edit_desc_field = -300
 }

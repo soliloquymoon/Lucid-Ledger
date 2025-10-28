@@ -4,11 +4,6 @@ function card_import(){
 		show_message("Unable to open file!")
 		return -1
 	}
-	var new_card = instance_create_depth(0, 0, 0, obj_card)
-	if (card_create_from_json(new_card, fn) = -1) {
-		show_message("Create card failed!")
-		instance_destroy(new_card)
-		return -1
-	}
-	return new_card
+	var new_card = card_create_from_json(fn)
+	return new_card[0]
 }

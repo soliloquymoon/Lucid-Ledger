@@ -3,9 +3,8 @@ function card_import_all(){
 	var curr
 	
 	while (file != "") {
-		curr = instance_create_layer(0, 0, 1, obj_card)
-		if (card_create_from_json(curr, file) = -1) instance_destroy(curr)
-		else array_push(deck, curr)
+		curr = card_create_from_json(file)
+		array_copy(deck, array_length(deck), curr, 0, array_length(curr))
 		file = file_find_next()
 	}
 	file_find_close()
