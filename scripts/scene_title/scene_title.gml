@@ -16,6 +16,8 @@ function scene_title(){
 	if (draw_button_size(942, 424, 357, 75, "Options")) show_debug_message("options")
 	
 	// card editor button
-	if (draw_button_size(942, 547, 357, 75, "Card Maker")) scene_transition(SCENE.CARDEDITOR)
+	if (draw_button_size(942, 547, 357, 75, "Card Maker")) {
+		scene_transition(SCENE.CARDEDITOR)
+	}
 	draw_set_font(Font1)
 }

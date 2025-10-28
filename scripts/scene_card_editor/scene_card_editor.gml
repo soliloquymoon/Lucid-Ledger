@@ -57,6 +57,6 @@ function scene_card_editor(){
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
 		instance_destroy(edit_name_field)
 		instance_destroy(edit_desc_field)
-		scene_transition(SCENE.TITLE)
+		scene = SCENE.TITLE
 	}
 }
