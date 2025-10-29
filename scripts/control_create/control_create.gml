@@ -28,4 +28,6 @@ function control_create(){
 	edit_name_field = -200
 	edit_desc_field = -300
 	
+	scr_value[100] = 0
+	scr_dragging[100] = 0
 }
