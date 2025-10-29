@@ -1,4 +1,5 @@
 function control_draw(){
+	window_set_cursor(cr_default)
 	draw_set_font(Font1)
 	draw_clear(c_ltgrey) // bg color
 	draw_set_color(0)
