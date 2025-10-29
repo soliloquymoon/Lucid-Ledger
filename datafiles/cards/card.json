@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lucid Focus",
+    "icon_index": 1,
+    "description": "Channel your awareness to sharpen the dream's details, though it slightly numbs emotions.",
+    "effects": {
+      "clarity": 30,
+      "emotion": -10,
+      "stability": 0
+    }
+  },
+  {
+    "name": "Emotive Surge",
+    "icon_index": 2,
+    "description": "Let emotions run wild, amplifying passion within the dream but blurring its form.",
+    "effects": {
+      "clarity": -10,
+      "emotion": 30,
+      "stability": 0
+    }
+  },
+  {
+    "name": "Balanced Meditation",
+    "icon_index": 3,
+    "description": "Center your mind within the dream, gently enhancing both focus and feeling.",
+    "effects": {
+      "clarity": 10,
+      "emotion": 10,
+      "stability": 0
+    }
+  },
+  {
+    "name": "Chaotic Inspiration",
+    "icon_index": 4,
+    "description": "Open the floodgates of creativity - emotion thrives, but stability pays the price.",
+    "effects": {
+      "clarity": 10,
+      "emotion": 25,
+      "stability": -1
+    }
+  },
+  {
+    "name": "Grounded Realism",
+    "icon_index": 5,
+    "description": "Anchor the dream in logic and form, stabilizing its structure at the cost of emotional depth.",
+    "effects": {
+      "clarity": 10,
+      "emotion": -10,
+      "stability": 1
+    }
+  }
+]

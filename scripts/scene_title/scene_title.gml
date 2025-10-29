@@ -13,7 +13,7 @@ function scene_title(){
 	if (draw_button_size(942, 300, 357, 75, "Start")) scene_transition(SCENE.MAIN)
 	
 	// draw settings button
-	if (draw_button_size(942, 424, 357, 75, "Options")) show_debug_message("options")
+	if (draw_button_size(942, 424, 357, 75, "Options")) scene_transition(SCENE.SETTINGS)
 	
 	// card editor button
 	if (draw_button_size(942, 547, 357, 75, "Card Maker")) {

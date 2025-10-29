@@ -20,6 +20,12 @@ function control_draw(){
 		case SCENE.SELL:
 			scene_sell()
 			break
+		case SCENE.INVENTORY:
+			scene_inventory()
+			break
+		case SCENE.SETTINGS:
+			scene_settings()
+			break
 			
 		case SCENE.CARDEDITOR:
 			scene_card_editor()
