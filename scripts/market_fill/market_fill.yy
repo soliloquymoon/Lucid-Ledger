@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "dream_tags",
+  "name": "market_fill",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Dream",
-    "path": "folders/Scripts/Dream.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

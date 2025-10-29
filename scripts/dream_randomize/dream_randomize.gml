@@ -52,12 +52,13 @@ function dream_randomize(dream){
 		"Fractal Lullaby",
 		"Echo of the Void"
 	]
-	dream.dream_name = dream_names[irandom_range(0, array_length(dream_names))]
-	dream.tags[0] = tags[0][irandom_range(0, array_length(tags[0]))]
+	dream.dream_name = dream_names[irandom_range(0, array_length(dream_names) - 1)]
+	array_push(dream.tags, tags_rarity[0][irandom_range(0, array_length(tags_rarity[0]) - 1)])
 	var rarity_second = irandom_range(0, 10) > 8
-	dream.tags[1] = tags[rarity_second][irandom_range(0, array_length(tags[rarity_second]))]
-	dream.tags[2] = tags[2][irandom_range(0, array_length(tags[2]))]
+	array_push(dream.tags, tags_rarity[rarity_second][irandom_range(0, array_length(tags_rarity[rarity_second]) - 1)])
+	array_push(dream.tags, tags_rarity[2][irandom_range(0, array_length(tags_rarity[2]) - 1)])
 	var rarity_fourth = (irandom_range(0, 10) > 8) + 2
-	dream.tags[3] = tags[rarity_fourth][irandom_range(0, array_length(tags[rarity_fourth]))]
-	dream.dream_value = dream_value_calculate(dream)
+	array_push(dream.tags, tags_rarity[rarity_fourth][irandom_range(0, array_length(tags_rarity[rarity_fourth]) - 1)])
+	dream.dream_value = irandom_range(120, 160) * 10
+	dream.recommended_value = dream_value_calculate(dream)
 }
