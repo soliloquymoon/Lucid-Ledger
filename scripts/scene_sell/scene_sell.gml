@@ -11,6 +11,9 @@ function scene_sell(){
 			scene_into(SCENE.SELL_INNER)
 			dream_to_sell = inventory[dream_sel]
 			player_offer_pending = dream_to_sell.dream_value
+			current_client = 0
+			player_offer_edit = 1
+			player_offer = 0
 		}
 	}
 	
