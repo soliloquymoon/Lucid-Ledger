@@ -26,9 +26,9 @@ function scene_edit(){
 			array_push(used, hand[card_sel])
 			array_delete(hand, card_sel, 1)
 			
-			dream_in_edit.unlocks[1] = (clarity >= 50)
-			dream_in_edit.unlocks[2] = (emotion >= 50)
-			dream_in_edit.unlocks[3] = (clarity >= 80 && emotion >= 80)
+			dream_in_edit.unlocks[1] = (dream_in_edit.clarity >= 50)
+			dream_in_edit.unlocks[2] = (dream_in_edit.emotion >= 50)
+			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80)
 			
 			if (dream_in_edit.stability <= 0) {
 				show_message("Dream collapsed!")
@@ -48,8 +48,8 @@ function scene_edit(){
 	
 	draw_set_font(Font2)
 	draw_set_color(0)
-	draw_text(1366 / 2 + 20, 200, "Clarity: " + string(dream_in_edit.clarity))
-	draw_text(1366 / 2 + 20, 300, "Emotion: " + string(dream_in_edit.emotion))
+	draw_text(1366 / 2 + 20, 200, "Emotion: " + string(dream_in_edit.emotion))
+	draw_text(1366 / 2 + 20, 300, "Clarity: " + string(dream_in_edit.clarity))
 	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {

@@ -10,6 +10,40 @@ function dream_draw_item(xx, yy, dream, display_price, scale = 1){
 	var value_str = "L" + string(dream.dream_value)
 	if (display_price) draw_text_transformed(xx + 406 * scale - string_width(value_str) / 2 * scale, yy + 60 * scale, value_str, scale, scale, 0)
 	
+	var tag_strs = ["", "", "", ""]
+	for (var i = 0; i < 4; i++) {
+		if (dream.unlocks[i] = 0) tag_strs[i] = "Locked"
+		else tag_strs[i] = dream.tags[i].tag_name
+	}
+	if (dream.unlocks[0]) {
+		draw_sprite(spr_tag_back, dream.tags[0].rarity, xx + 160 * scale, yy + 63 * scale)
+		draw_sprite(spr_trend_indicator, dream.tags[0].trend_type, xx + 187 * scale, yy + 70 * scale)
+	} else {
+		draw_sprite(spr_tag_back, 4, xx + 160 * scale, yy + 63 * scale)
+	}
+	set_tooltip(xx + 160 * scale, yy + 63 * scale, 58 * scale, 18 * scale, tag_strs[0])
+	if (dream.unlocks[1]) {
+	draw_sprite(spr_tag_back, dream.tags[1].rarity, xx + 254 * scale, yy + 63 * scale)
+	draw_sprite(spr_trend_indicator, dream.tags[1].trend_type, xx + 281 * scale, yy + 70 * scale)
+	} else {
+		draw_sprite(spr_tag_back, 4, xx + 254 * scale, yy + 63 * scale)
+	}
+	set_tooltip(xx + 254 * scale, yy + 63 * scale, 58 * scale, 18 * scale, tag_strs[1])
+	if (dream.unlocks[2]) {
+	draw_sprite(spr_tag_back, dream.tags[2].rarity, xx + 160 * scale, yy + 88 * scale)
+	draw_sprite(spr_trend_indicator, dream.tags[2].trend_type, xx + 187 * scale, yy + 95 * scale)
+	} else {
+		draw_sprite(spr_tag_back, 4, xx + 160 * scale, yy + 88 * scale)
+	}
+	set_tooltip(xx + 160 * scale, yy + 88 * scale, 58 * scale, 18 * scale, tag_strs[2])
+	if (dream.unlocks[3]) {
+	draw_sprite(spr_tag_back, dream.tags[3].rarity, xx + 254 * scale, yy + 88 * scale)
+	draw_sprite(spr_trend_indicator, dream.tags[3].trend_type, xx + 281 * scale, yy + 95 * scale)
+	} else {
+		draw_sprite(spr_tag_back, 4, xx + 254 * scale, yy + 88 * scale)
+	}
+	set_tooltip(xx + 254 * scale, yy + 88 * scale, 58 * scale, 18 * scale, tag_strs[3])
+	
 	var a = mouse_rectangle(xx, yy, 138 * scale, 138 * scale) || mouse_rectangle(xx + 138 * scale, yy + 19 * scale, 318 * scale, 100 * scale)
 	if (a) a += mouse_check_button(mb_left)
 	

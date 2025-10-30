@@ -29,6 +29,9 @@ function control_draw(){
 		case SCENE.SETTINGS:
 			scene_settings()
 			break
+		case SCENE.SELL_INNER:
+			scene_sell_inner()
+			break
 			
 		case SCENE.CARDEDITOR:
 			scene_card_editor()

@@ -1,5 +1,5 @@
 function dream_value_calculate(dream){
-	var value = 1000
+	var value = dream.dream_value
 	for (var i = 0; i < 4; i++) {
 		if (dream.unlocks[i]) {
 			value += rarities[dream.tags[i].rarity].base_price

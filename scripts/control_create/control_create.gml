@@ -11,6 +11,7 @@ function control_create(){
 		MAIN,
 		INVENTORY,
 		SETTINGS,
+		SELL_INNER,
 		
 		CARDEDITOR
 	}
@@ -40,6 +41,21 @@ function control_create(){
 	edit_desc_field = -300
 	
 	dream_in_edit = -1
+	dream_to_sell = -1
+	
+	current_client = 0
+	player_offer = 0
+	player_offer_pending = 0
+	player_offer_edit = 1
+	client_offer = 0
+	client_offer_made = 0
+	client_offer_making_timer = 0
+	client_rounds = 0
+	
+	bubble_display = 0
+	bubble_str = ""
+	bubble_next = []
+	bubble_name = ""
 	
 	scr_value[100] = 0
 	scr_dragging[100] = 0
