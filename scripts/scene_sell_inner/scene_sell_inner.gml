@@ -59,6 +59,8 @@ function scene_sell_inner(){
 				client_rounds = 0;
 				client_offer = 0;
 				client_offer_making_timer = 0;
+				player_offer = 0
+				player_offer_edit = 1
 			}
 			else {
 				if (player_offer > 0 && player_offer >= min_sale_price && player_offer <= client_willing_max) {
@@ -99,6 +101,7 @@ function scene_sell_inner(){
 	}
 	
 	if (client_offer = -10) {
+		client_offer = 0
 		show_message("Dream sold!")
 		money += player_offer
 		schedule_dream_removal(dream_to_sell)
