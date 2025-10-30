@@ -30,6 +30,8 @@ function control_create(){
 	used = []
 	inventory = []
 	market = []
+	dream_to_remove = -1
+	dream_id_counter = 0
 	
 	card_import_all()
 	

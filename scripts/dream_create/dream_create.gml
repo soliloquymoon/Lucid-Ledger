@@ -7,4 +7,6 @@ function dream_create(){
 	stability = 10
 	emotion = 20
 	clarity = 20
+	dream_id = obj_controller.dream_id_counter
+	obj_controller.dream_id_counter++
 }

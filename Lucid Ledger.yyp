@@ -41,6 +41,7 @@
     {"id":{"name":"market_fill","path":"scripts/market_fill/market_fill.yy",},"order":18,},
     {"id":{"name":"draw_time_display","path":"scripts/draw_time_display/draw_time_display.yy",},"order":14,},
     {"id":{"name":"draw_button_size","path":"scripts/draw_button_size/draw_button_size.yy",},"order":7,},
+    {"id":{"name":"schedule_dream_removal","path":"scripts/schedule_dream_removal/schedule_dream_removal.yy",},"order":22,},
     {"id":{"name":"draw_radio_button","path":"scripts/draw_radio_button/draw_radio_button.yy",},"order":11,},
     {"id":{"name":"obj_text_edit","path":"objects/obj_text_edit/obj_text_edit.yy",},"order":3,},
     {"id":{"name":"spr_icon_border","path":"sprites/spr_icon_border/spr_icon_border.yy",},"order":11,},

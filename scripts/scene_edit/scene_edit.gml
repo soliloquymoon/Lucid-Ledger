@@ -1,6 +1,5 @@
 function scene_edit(){
 	draw_set_color(0)
-	draw_text(10, 10, "edit scene")
 	
 	dream_draw_item(200, 200, dream_in_edit, 0)
 	
@@ -26,10 +25,29 @@ function scene_edit(){
 			dream_in_edit.stability += hand[card_sel].stability_effect
 			array_push(used, hand[card_sel])
 			array_delete(hand, card_sel, 1)
+			
+			dream_in_edit.unlocks[1] = (clarity >= 50)
+			dream_in_edit.unlocks[2] = (emotion >= 50)
+			dream_in_edit.unlocks[3] = (clarity >= 80 && emotion >= 80)
+			
+			if (dream_in_edit.stability <= 0) {
+				show_message("Dream collapsed!")
+				schedule_dream_removal(dream_in_edit)
+				for (var i = 0; i < array_length(inventory); i++) {
+					if (inventory[i].dream_id = dream_in_edit.dream_id) {
+						array_delete(inventory, i, 1)
+						break
+					}
+				}
+				scene_exit()
+			}
+			
+			dream_value_calculate(dream_in_edit)
 		}
 	}
 	
 	draw_set_font(Font2)
+	draw_set_color(0)
 	draw_text(1366 / 2 + 20, 200, "Clarity: " + string(dream_in_edit.clarity))
 	draw_text(1366 / 2 + 20, 300, "Emotion: " + string(dream_in_edit.emotion))
 	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
