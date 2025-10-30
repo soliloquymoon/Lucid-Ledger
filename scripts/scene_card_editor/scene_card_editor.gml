@@ -58,5 +58,6 @@ function scene_card_editor(){
 		instance_destroy(edit_name_field)
 		instance_destroy(edit_desc_field)
 		scene = SCENE.TITLE
+		scene_stack = [SCENE.TITLE]
 	}
 }

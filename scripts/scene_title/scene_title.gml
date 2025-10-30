@@ -10,14 +10,14 @@ function scene_title(){
 	
 	// draw start button
 	draw_set_font(Font2)
-	if (draw_button_size(942, 300, 357, 75, "Start")) scene_transition(SCENE.MAIN)
+	if (draw_button_size(942, 300, 357, 75, "Start")) scene_into(SCENE.MAIN)
 	
 	// draw settings button
-	if (draw_button_size(942, 424, 357, 75, "Options")) scene_transition(SCENE.SETTINGS)
+	if (draw_button_size(942, 424, 357, 75, "Options")) scene_into(SCENE.SETTINGS)
 	
 	// card editor button
 	if (draw_button_size(942, 547, 357, 75, "Card Maker")) {
-		scene_transition(SCENE.CARDEDITOR)
+		scene_into(SCENE.CARDEDITOR)
 	}
 	draw_set_font(Font1)
 }

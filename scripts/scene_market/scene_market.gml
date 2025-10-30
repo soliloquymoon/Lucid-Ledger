@@ -23,6 +23,6 @@ function scene_market(){
 	
 	draw_set_font(Font1)
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
-		scene_transition(last_scene)
+		scene_exit()
 	}
 }

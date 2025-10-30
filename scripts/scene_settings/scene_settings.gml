@@ -3,6 +3,6 @@ function scene_settings(){
 	draw_text(10, 10, "sertings scene")
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
-		scene_transition(last_scene)
+		scene_exit()
 	}
 }

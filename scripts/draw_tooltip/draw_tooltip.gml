@@ -6,10 +6,8 @@ function draw_tooltip(xx, yy, w, h, str){
 			line_breaks++
 		}
 	}
-	if (mouse_rectangle(xx, yy, w, h)) {
-		draw_set_color(c_white)
-		draw_set_font(Font1)
-		draw_frame_solid(mouse_x, mouse_y, string_width(str) + 8, string_height(str) + 8)
-		draw_text(mouse_x + 4, mouse_y + 4, str)
-	}
+	draw_set_color(c_white)
+	draw_set_font(Font1)
+	draw_frame_solid(mouse_x, mouse_y, string_width(str) + 8, string_height(str) + 8)
+	draw_text(mouse_x + 4, mouse_y + 4, str)
 }

@@ -19,23 +19,36 @@ function control_create(){
 		TEST2
 	}
 	scene = SCENE.TITLE
-	last_scene = SCENE.TITLE
+	scene_stack = [SCENE.TITLE]
 	money = 2000 // Lunite
 	day_counter = 1
 	rounds = 1
 	loan_amount = 0
 	loan_due_date = -1
 	deck = []
+	hand = []
+	used = []
 	inventory = []
 	market = []
+	
+	card_import_all()
 	
 	card_in_edit = -100
 	edit_name_field = -200
 	edit_desc_field = -300
 	
+	dream_in_edit = -1
+	
 	scr_value[100] = 0
 	scr_dragging[100] = 0
 	scr_drag = 0
+	
+	tooltip_x = 0
+	tooltip_y = 0
+	tooltip_w = 0
+	tooltip_h = 0
+	tooltip_str = ""
+	tooltip_display = 0
 	
 	current_trend = 0
 	

@@ -5,6 +5,8 @@ function control_draw(){
 	draw_set_color(0)
 	//draw_text(10, 10, "Hello World!")
 	
+	tooltip_display = 0
+	
 	switch(scene) {
 		case SCENE.TITLE:
 			scene_title()
@@ -31,5 +33,9 @@ function control_draw(){
 		case SCENE.CARDEDITOR:
 			scene_card_editor()
 			break
+	}
+	
+	if (tooltip_display) {
+		draw_tooltip(tooltip_x, tooltip_y, tooltip_w, tooltip_h, tooltip_str)
 	}
 }
