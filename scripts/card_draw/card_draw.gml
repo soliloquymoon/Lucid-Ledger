@@ -30,4 +30,6 @@ function card_draw(xx, yy, card, scale=1){
 	draw_text_transformed(xx + 62 * scale, yy + 228 * scale, stability_str, scale, scale, 0)
 	
 	set_tooltip(xx, yy, sprite_get_width(spr_card) * 0.5 * scale, sprite_get_height(spr_card) * 0.5 * scale, card.card_desc)
+	
+	return mouse_rectangle(xx, yy, sprite_get_width(spr_card) * 0.5 * scale, sprite_get_height(spr_card) * 0.5 * scale)
 }

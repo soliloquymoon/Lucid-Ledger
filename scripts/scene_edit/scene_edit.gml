@@ -10,12 +10,29 @@ function scene_edit(){
 	var card_y = 500
 	var card_x = 1366 / 2 - (card_width * array_length(hand) + spacing * (array_length(hand) - 1)) / 2
 	
-	while(array_length(hand) < 5) draw_card()
 	if (array_length(deck) = 0) deck_fill()
+	while(array_length(hand) < 5) draw_card()
+	
+	var card_sel = -1
 	
 	for (var i = 0; i < array_length(hand); i++) {
-		card_draw(card_x + (card_width + spacing) * i, card_y, hand[i])
+		if (card_draw(card_x + (card_width + spacing) * i, card_y, hand[i]) && mouse_check_button_released(mb_left)) card_sel = i
 	}
+	
+	if (card_sel != -1)	{
+		if (show_question("Use this card?")) {
+			dream_in_edit.clarity += hand[card_sel].clarity_effect
+			dream_in_edit.emotion += hand[card_sel].emotion_effect
+			dream_in_edit.stability += hand[card_sel].stability_effect
+			array_push(used, hand[card_sel])
+			array_delete(hand, card_sel, 1)
+		}
+	}
+	
+	draw_set_font(Font2)
+	draw_text(1366 / 2 + 20, 200, "Clarity: " + string(dream_in_edit.clarity))
+	draw_text(1366 / 2 + 20, 300, "Emotion: " + string(dream_in_edit.emotion))
+	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
 		scene_exit()
