@@ -68,7 +68,7 @@ function control_create(){
 	tooltip_str = ""
 	tooltip_display = 0
 	
-	current_trend = 0
+	current_event = "event_none"
 	
 	tags = load_tags(working_directory + "tags.json")
 	events = load_events(working_directory + "events.json")

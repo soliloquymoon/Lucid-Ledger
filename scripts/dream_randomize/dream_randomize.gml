@@ -53,12 +53,7 @@ function dream_randomize(dream){
 		"Echo of the Void"
 	]
 	dream.dream_name = dream_names[irandom_range(0, array_length(dream_names) - 1)]
-	array_push(dream.tags, tags_rarity[0][irandom_range(0, array_length(tags_rarity[0]) - 1)])
-	var rarity_second = irandom_range(0, 10) > 8
-	array_push(dream.tags, tags_rarity[rarity_second][irandom_range(0, array_length(tags_rarity[rarity_second]) - 1)])
-	array_push(dream.tags, tags_rarity[2][irandom_range(0, array_length(tags_rarity[2]) - 1)])
-	var rarity_fourth = (irandom_range(0, 10) > 8) + 2
-	array_push(dream.tags, tags_rarity[rarity_fourth][irandom_range(0, array_length(tags_rarity[rarity_fourth]) - 1)])
+	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
 	dream.dream_value = irandom_range(120, 160) * 10
 	dream.recommended_value = dream_value_calculate(dream)
 }

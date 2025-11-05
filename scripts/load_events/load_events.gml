@@ -25,10 +25,10 @@ function load_events(fn){
 	try {
 		var card_list = json_map
 		for (var i = 0; i < array_length(card_list); i++) {
-			var item = { tag_name: "", teg_desc: "", tag_id: "", effects: {} }
-			item.tag_name = variable_struct_get(card_list[i], "name")
-			item.tag_desc = variable_struct_get(card_list[i], "description")
-			item.tag_id = variable_struct_get(card_list[i], "id")
+			var item = { event_name: "", event_desc: "", event_id: "", effects: {} }
+			item.event_name = variable_struct_get(card_list[i], "name")
+			item.event_desc = variable_struct_get(card_list[i], "description")
+			item.event_id = variable_struct_get(card_list[i], "id")
 			item.effects = variable_struct_get(card_list[i], "effects")
 			array_push(return_list, item)
 		}

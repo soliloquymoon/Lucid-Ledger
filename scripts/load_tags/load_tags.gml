@@ -25,7 +25,7 @@ function load_tags(fn){
 	try {
 		var card_list = json_map
 		for (var i = 0; i < array_length(card_list); i++) {
-			var item = { tag_name: "", teg_desc: "", tag_id: "", base_value: 0 }
+			var item = { tag_name: "", tag_desc: "", tag_id: "", base_value: 0 }
 			item.tag_name = variable_struct_get(card_list[i], "name")
 			item.tag_desc = variable_struct_get(card_list[i], "description")
 			item.tag_id = variable_struct_get(card_list[i], "id")

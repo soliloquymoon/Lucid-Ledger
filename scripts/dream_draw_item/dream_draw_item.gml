@@ -16,29 +16,29 @@ function dream_draw_item(xx, yy, dream, display_price, scale = 1){
 		else tag_strs[i] = dream.tags[i].tag_name
 	}
 	if (dream.unlocks[0]) {
-		draw_sprite(spr_tag_back, dream.tags[0].rarity, xx + 160 * scale, yy + 63 * scale)
-		draw_sprite(spr_trend_indicator, dream.tags[0].trend_type, xx + 187 * scale, yy + 70 * scale)
+		draw_sprite(spr_tag_back, 0, xx + 160 * scale, yy + 63 * scale)
+		draw_sprite(spr_trend_indicator, 0, xx + 187 * scale, yy + 70 * scale)
 	} else {
 		draw_sprite(spr_tag_back, 4, xx + 160 * scale, yy + 63 * scale)
 	}
 	set_tooltip(xx + 160 * scale, yy + 63 * scale, 58 * scale, 18 * scale, tag_strs[0])
 	if (dream.unlocks[1]) {
-	draw_sprite(spr_tag_back, dream.tags[1].rarity, xx + 254 * scale, yy + 63 * scale)
-	draw_sprite(spr_trend_indicator, dream.tags[1].trend_type, xx + 281 * scale, yy + 70 * scale)
+	draw_sprite(spr_tag_back, 0, xx + 254 * scale, yy + 63 * scale)
+	draw_sprite(spr_trend_indicator, 0, xx + 281 * scale, yy + 70 * scale)
 	} else {
 		draw_sprite(spr_tag_back, 4, xx + 254 * scale, yy + 63 * scale)
 	}
 	set_tooltip(xx + 254 * scale, yy + 63 * scale, 58 * scale, 18 * scale, tag_strs[1])
 	if (dream.unlocks[2]) {
-	draw_sprite(spr_tag_back, dream.tags[2].rarity, xx + 160 * scale, yy + 88 * scale)
-	draw_sprite(spr_trend_indicator, dream.tags[2].trend_type, xx + 187 * scale, yy + 95 * scale)
+	draw_sprite(spr_tag_back, 0, xx + 160 * scale, yy + 88 * scale)
+	draw_sprite(spr_trend_indicator, 0, xx + 187 * scale, yy + 95 * scale)
 	} else {
 		draw_sprite(spr_tag_back, 4, xx + 160 * scale, yy + 88 * scale)
 	}
 	set_tooltip(xx + 160 * scale, yy + 88 * scale, 58 * scale, 18 * scale, tag_strs[2])
 	if (dream.unlocks[3]) {
-	draw_sprite(spr_tag_back, dream.tags[3].rarity, xx + 254 * scale, yy + 88 * scale)
-	draw_sprite(spr_trend_indicator, dream.tags[3].trend_type, xx + 281 * scale, yy + 95 * scale)
+	draw_sprite(spr_tag_back, 0, xx + 254 * scale, yy + 88 * scale)
+	draw_sprite(spr_trend_indicator, 0, xx + 281 * scale, yy + 95 * scale)
 	} else {
 		draw_sprite(spr_tag_back, 4, xx + 254 * scale, yy + 88 * scale)
 	}
