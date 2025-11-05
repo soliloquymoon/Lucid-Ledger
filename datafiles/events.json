@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Focus Week",
+    "id": "event_focus_week",
+    "description": "Schools and companies promote focus and mindfulness programs. People talk about mental clarity, journaling, and controlling their thoughts and dreams.",
+    "effects": {
+      "tag_lucidity": 1.3,
+      "tag_serenity": 1.1,
+      "tag_nightmare": 0.9
+    }
+  },
+  {
+    "name": "Retro Wave Trend",
+    "id": "event_retro_wave",
+    "description": "Old music, vintage fashion, and early internet styles become popular again. People start chasing memories and nostalgic feelings in everything they see.",
+    "effects": {
+      "tag_nostalgia": 1.4,
+      "tag_euphoria": 1.2,
+      "tag_surrealism": 1.1
+    }
+  },
+  {
+    "name": "Sleep Health Campaign",
+    "id": "event_sleep_health",
+    "description": "Health experts push better sleep habits and meditation apps. Calm and restful content spreads online as people look for peace and balance.",
+    "effects": {
+      "tag_serenity": 1.3,
+      "tag_oceanic": 1.2,
+      "tag_nightmare": 0.8
+    }
+  },
+  {
+    "name": "Tech Expo Release",
+    "id": "event_tech_expo",
+    "description": "A new VR headset and AI dream simulator are revealed at a big tech show. People share strange and creative experiences from their digital dreams.",
+    "effects": {
+      "tag_surrealism": 1.4,
+      "tag_lucidity": 1.2,
+      "tag_prophecy": 1.1
+    }
+  },
+  {
+    "name": "Travel Boom",
+    "id": "event_travel_boom",
+    "description": "Cheap flights and global events spark a rush for travel. Social media fills with beach videos, mountain shots, and photos from above the clouds.",
+    "effects": {
+      "tag_flight": 1.3,
+      "tag_oceanic": 1.2,
+      "tag_serenity": 1.1
+    }
+  }
+]

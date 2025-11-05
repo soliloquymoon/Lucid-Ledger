@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Lucidity",
+    "id": "tag_lucidity",
+    "description": "Self-aware, consciously guided dreaming prized by scholars and perfectionists.",
+    "base value": 120
+  },
+  {
+    "name": "Nostalgia",
+    "id": "tag_nostalgia",
+    "description": "Bittersweet echoes of the past, memory-laced scenes and familiar places.",
+    "base value": 100
+  },
+  {
+    "name": "Euphoria",
+    "id": "tag_euphoria",
+    "description": "Surges of joy and wonder that saturate the dream with elation.",
+    "base value": 130
+  },
+  {
+    "name": "Nightmare",
+    "id": "tag_nightmare",
+    "description": "Dark imagery and visceral fear; unstable but emotionally potent.",
+    "base value": 90
+  },
+  {
+    "name": "Prophecy",
+    "id": "tag_prophecy",
+    "description": "Symbols and sequences rumored to foreshadow real events.",
+    "base value": 150
+  },
+  {
+    "name": "Surrealism",
+    "id": "tag_surreal",
+    "description": "Impossible juxtapositions and dream logic that defy reality.",
+    "base value": 95
+  },
+  {
+    "name": "Serenity",
+    "id": "tag_serenity",
+    "description": "Calm waters, quiet rooms, and restful breath; soothing by design.",
+    "base value": 110
+  },
+  {
+    "name": "Flight",
+    "id": "tag_flight",
+    "description": "Weightless escape and skyward freedom; the classic flying dream.",
+    "base value": 105
+  },
+  {
+    "name": "Oceanic",
+    "id": "tag_oceanic",
+    "description": "Tides, whalesong, and deep-blue infinity; vast and meditative.",
+    "base value": 95
+  },
+  {
+    "name": "Labyrinth",
+    "id": "tag_labyrinth",
+    "description": "Endless corridors and shifting maps; mystery with a hint of dread.",
+    "base value": 100
+  }
+]
