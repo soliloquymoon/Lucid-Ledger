@@ -10,6 +10,7 @@ function dream_value_calculate(dream){
 					if (effects[j] == dream.tags[i].tag_name) tag_price *= variable_struct_get(curr_event.effects, effects[j])
 				}
 			}
+			show_debug_message(dream.tags[i])
 			value += tag_price
 		}
 	}

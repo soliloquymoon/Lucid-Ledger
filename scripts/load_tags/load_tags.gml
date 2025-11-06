@@ -29,7 +29,7 @@ function load_tags(fn){
 			item.tag_name = variable_struct_get(card_list[i], "name")
 			item.tag_desc = variable_struct_get(card_list[i], "description")
 			item.tag_id = variable_struct_get(card_list[i], "id")
-			item.base_value = variable_struct_get(card_list[i], "base_value")
+			item.base_value = variable_struct_get(card_list[i], "base value")
 			array_push(return_list, item)
 		}
 	}

@@ -3,6 +3,6 @@ function time_advance(){
 	if (rounds > 4) {
 		rounds = 0
 		day++
-		
+		event_randomize()
 	}
 }

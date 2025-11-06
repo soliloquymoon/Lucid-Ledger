@@ -111,7 +111,7 @@ function scene_sell_inner(){
 				break
 			}
 		}
-		rounds++
+		time_advance()
 		scene_exit()
 	}
 	
@@ -128,12 +128,12 @@ function scene_sell_inner(){
 					break
 				}
 			}
-			rounds++
+			time_advance()
 			scene_exit()
 		}
 		if (draw_button_size(642, 276, 85, 46, "Decline")) {
 			show_message("Dream failed to sell!")
-			rounds++
+			time_advance()
 			scene_exit()
 		}
 		if (client_rounds < 4) {
