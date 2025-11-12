@@ -35,7 +35,7 @@ function card_create_from_json(fn){
 				card.clarity_effect = variable_struct_get(card_list[i].effects, "clarity")
 				card.stability_effect = variable_struct_get(card_list[i].effects, "stability")
 				if (variable_struct_exists(card_list[i], "requisite")) card.requisite = variable_struct_get(card_list[i], "requisite")
-				if (variable_struct_exists(card_list[i], "special")) card.requisite = variable_struct_get(card_list[i], "special")
+				if (variable_struct_exists(card_list[i], "special")) card.special = variable_struct_get(card_list[i], "special")
 				array_push(return_list, card)
 			}
 		} else {
@@ -47,7 +47,7 @@ function card_create_from_json(fn){
 			card.clarity_effect = variable_struct_get(json_map.effects, "clarity")
 			card.stability_effect = variable_struct_get(json_map.effects, "stability")
 			if (variable_struct_exists(card_list[i], "requisite")) card.requisite = variable_struct_get(card_list[i], "requisite")
-			if (variable_struct_exists(card_list[i], "special")) card.requisite = variable_struct_get(card_list[i], "special")
+			if (variable_struct_exists(card_list[i], "special")) card.special = variable_struct_get(card_list[i], "special")
 			array_push(return_list, card)
 		}
 	}

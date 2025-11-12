@@ -31,6 +31,7 @@ function control_create(){
 	hand = []
 	used = []
 	inventory = []
+	inventory_tags = []
 	market = []
 	dream_to_remove = -1
 	dream_id_counter = 0

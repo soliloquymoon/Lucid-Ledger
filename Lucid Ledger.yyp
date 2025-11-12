@@ -90,6 +90,7 @@
     {"id":{"name":"dream_load_stages","path":"scripts/dream_load_stages/dream_load_stages.yy",},"order":5,},
     {"id":{"name":"text_line_break","path":"scripts/text_line_break/text_line_break.yy",},"order":29,},
     {"id":{"name":"libxprocess","path":"extensions/libxprocess/libxprocess.yy",},"order":1,},
+    {"id":{"name":"dream_recycle","path":"scripts/dream_recycle/dream_recycle.yy",},"order":6,},
     {"id":{"name":"spr_frame","path":"sprites/spr_frame/spr_frame.yy",},"order":16,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],

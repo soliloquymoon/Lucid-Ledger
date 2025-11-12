@@ -23,21 +23,21 @@ function scene_edit(){
 	
 	if (card_sel != -1)	{
 		if (show_question("Use this card?")) {
-			dream_in_edit.clarity += hand[card_sel].clarity_effect
-			dream_in_edit.emotion += hand[card_sel].emotion_effect
-			dream_in_edit.stability += hand[card_sel].stability_effect
+			var curr_card = hand[card_sel]
+			dream_in_edit.clarity += curr_card.clarity_effect
+			dream_in_edit.emotion += curr_card.emotion_effect
+			dream_in_edit.stability += curr_card.stability_effect
+			
 			array_push(used, hand[card_sel])
 			array_delete(hand, card_sel, 1)
 			
-			dream_in_edit.unlocks[1] = (dream_in_edit.clarity >= 50)
-			dream_in_edit.unlocks[2] = (dream_in_edit.emotion >= 50)
-			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80)
-			
-			switch (hand[card_sel].special) {
-				case 1:
+			show_debug_message(curr_card.special)
+			switch (curr_card.special) {
+				case 1: {
 					// TODO: make able to replace initial tag
 					break
-				case 2:
+				}
+				case 2: {
 					// Reshuffle hand
 					hand_limit++
 					for (var i = 0; i < array_length(hand); i++) {
@@ -49,12 +49,18 @@ function scene_edit(){
 						draw_card()
 					}
 					break
-				case 3:
+				}
+				case 3: {
 					// Set emotion and clarity to the higher value
-					clarity = max(emotion, clarity)
-					emotion = clarity
+					dream_in_edit.clarity = max(dream_in_edit.emotion, dream_in_edit.clarity)
+					dream_in_edit.emotion = dream_in_edit.clarity
 					break
+				}
 			}
+			
+			dream_in_edit.unlocks[1] = (dream_in_edit.clarity >= 50)
+			dream_in_edit.unlocks[2] = (dream_in_edit.emotion >= 50)
+			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80)
 			
 			if (dream_in_edit.stability <= 0) {
 				show_message("Dream collapsed!")
