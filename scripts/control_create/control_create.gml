@@ -72,6 +72,7 @@ function control_create(){
 	
 	tags = load_tags(working_directory + "tags.json")
 	events = load_events(working_directory + "events.json")
+	dream_stages = dream_load_stages(working_directory + "dream.json")
 	
 	event_randomize()
 }

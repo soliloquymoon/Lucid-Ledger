@@ -87,6 +87,7 @@
     {"id":{"name":"spr_tag_back","path":"sprites/spr_tag_back/spr_tag_back.yy",},"order":23,},
     {"id":{"name":"scene_inventory","path":"scripts/scene_inventory/scene_inventory.yy",},"order":6,},
     {"id":{"name":"mouse_rectangle","path":"scripts/mouse_rectangle/mouse_rectangle.yy",},"order":2,},
+    {"id":{"name":"dream_load_stages","path":"scripts/dream_load_stages/dream_load_stages.yy",},"order":5,},
     {"id":{"name":"libxprocess","path":"extensions/libxprocess/libxprocess.yy",},"order":1,},
     {"id":{"name":"spr_frame","path":"sprites/spr_frame/spr_frame.yy",},"order":16,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
