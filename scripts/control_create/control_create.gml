@@ -26,6 +26,7 @@ function control_create(){
 	rounds = 1
 	loan_amount = 0
 	loan_due_date = -1
+	all_cards = []
 	deck = []
 	hand = []
 	used = []
@@ -36,6 +37,7 @@ function control_create(){
 	hand_limit = 3
 	
 	card_import_all()
+	array_copy(deck, 0, all_cards, 0, array_length(all_cards))
 	
 	card_in_edit = -100
 	edit_name_field = -200

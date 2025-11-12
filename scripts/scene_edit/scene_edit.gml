@@ -39,6 +39,7 @@ function scene_edit(){
 					break
 				case 2:
 					// Reshuffle hand
+					hand_limit++
 					for (var i = 0; i < array_length(hand); i++) {
 						array_push(used, hand[i])
 						array_delete(hand, i, 1)

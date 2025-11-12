@@ -9,6 +9,11 @@ function scene_inventory(){
 	if (dream_sel != -1) {
 		if (show_question("Do you want edit this dream?")) {
 			scene_into(SCENE.EDIT)
+			deck = []
+			hand = []
+			used = []
+			hand_limit = 3
+			array_copy(deck, 0, all_cards, 0, array_length(all_cards))
 			dream_in_edit = inventory[dream_sel]
 		}
 	}
