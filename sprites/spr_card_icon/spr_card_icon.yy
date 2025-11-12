@@ -11,14 +11,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 499,
+  "bbox_right": 706,
   "bbox_top": 0,
   "bbox_bottom": 499,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 500,
+  "width": 707,
   "height": 500,
   "textureGroupId": {
     "name": "Default",
@@ -83,6 +83,7 @@
   },
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e933a7af-a4f4-4916-afb7-b0a32b32c1aa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"280405ed-d2dc-48df-9233-d53dc7c06da6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {

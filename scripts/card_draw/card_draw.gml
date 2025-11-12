@@ -10,7 +10,9 @@ function card_draw(xx, yy, card, scale=1){
 	draw_sprite_stretched(spr_card_icon, card.icon_sprite, xx + 19 * scale, yy + 73 * scale, 133 * scale, 94 * scale)
 	
 	draw_set_color(c_white)
-	draw_text_transformed(xx + 18 * scale, yy + 29 * scale, card.card_name, scale, scale, 0)
+	var text_scale = 1
+	if (string_width(card.card_name) > 132) text_scale = 132 / string_width(card.card_name)
+	draw_text_transformed(xx + 18 * scale, yy + 29 * scale, card.card_name, text_scale * scale, scale, 0)
 	
 	//draw effects
 	var emotion_str, clarity_str, stability_str
