@@ -5,4 +5,6 @@ function card_init(){
 	emotion_effect = 0
 	clarity_effect = 0
 	stability_effect = 0
+	requisite = ""
+	special = 0
 }

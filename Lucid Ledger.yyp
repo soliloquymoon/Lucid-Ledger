@@ -134,6 +134,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"card.json","CopyToMask":-1,"filePath":"datafiles/cards",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"tags.json","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"events.json","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"dream.json","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.3.85",

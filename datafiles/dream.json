@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Initial Dream",
+    "id": "stage0_initial",
+    "narrative": "The dream stirs like something half-buried beneath water, visible but wavering. Its emotions are faint and its imagery is soft and mutable. Shapes rise and collapse before they have time to mean anything. Whatever essence draws this dream together is still fragile, still shy about being seen. It waits for your touch, your guidance, your choice of what deserves to stay and what must fade back into the dark. You are not shaping a world yet, you are coaxing one to open its eyes."
+  },
+  {
+    "name": "Forming Dream",
+    "id": "stage1_forming",
+    "narrative": "The dream gains weight. Colors deepen. Sound sharpens. Memory, emotion, and imagery begin to entwine into something intentional. The dream speaks now, not in words, but in symbols, in a place, a feeling, a presence that lingers even when unseen. You feel the dream watching you as much as you observe it, testing your conviction. Its shape is no longer accidental. You are no longer stepping through fog, you are negotiating with a soul that wishes to define itself."
+  },
+  {
+    "name": "Deep Dream",
+    "id": "stage2_deep",
+    "narrative": "The dream awakens in full. Its world no longer drifts, it breathes. Every texture feels intentional, warmth against skin, weight in your chest, echoes of laughter or fear that follow you through every corridor. The dream remembers everything you have chosen for it and everything you have denied. More power hums through it now than it can easily contain. Push it carefully, like tuning the final string on a lute before it snaps, or risk watching meaning burst into chaos."
+  },
+  {
+    "name": "Ascended Dream",
+    "id": "stage3_ascended",
+    "narrative": "The dream stands complete, a world with its own gravity. No longer a reflection of your will, but a companion to it. Every image resonates with purpose, every emotion rings like struck glass. The dream has become a story, its story, and it allows you to witness it only because you shaped it with care and peril. You feel its edges trembling; creation like this does not last forever. If you wish to carry its meaning back to waking life, now is the time to hold it, name it, and let it go."
+  }
+]
