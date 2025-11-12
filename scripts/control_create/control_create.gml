@@ -33,6 +33,7 @@ function control_create(){
 	market = []
 	dream_to_remove = -1
 	dream_id_counter = 0
+	hand_limit = 3
 	
 	card_import_all()
 	

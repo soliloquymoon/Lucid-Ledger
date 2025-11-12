@@ -36,5 +36,6 @@ function dream_load_stages(fn){
 		show_message(string(e))
 		return -1
 	}
+	show_debug_message(return_list)
 	return return_list
 }

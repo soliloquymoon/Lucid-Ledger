@@ -10,7 +10,10 @@ function scene_edit(){
 	var card_x = 1366 / 2 - (card_width * array_length(hand) + spacing * (array_length(hand) - 1)) / 2
 	
 	if (array_length(deck) = 0) deck_fill()
-	while(array_length(hand) < 5) draw_card()
+	while(array_length(hand) < hand_limit) {
+		if (array_length(deck) = 0) deck_fill()
+		draw_card()
+	}
 	
 	var card_sel = -1
 	
@@ -29,6 +32,28 @@ function scene_edit(){
 			dream_in_edit.unlocks[1] = (dream_in_edit.clarity >= 50)
 			dream_in_edit.unlocks[2] = (dream_in_edit.emotion >= 50)
 			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80)
+			
+			switch (hand[card_sel].special) {
+				case 1:
+					// TODO: make able to replace initial tag
+					break
+				case 2:
+					// Reshuffle hand
+					for (var i = 0; i < array_length(hand); i++) {
+						array_push(used, hand[i])
+						array_delete(hand, i, 1)
+					}
+					while(array_length(hand) < hand_limit) {
+						if (array_length(deck) = 0) deck_fill()
+						draw_card()
+					}
+					break
+				case 3:
+					// Set emotion and clarity to the higher value
+					clarity = max(emotion, clarity)
+					emotion = clarity
+					break
+			}
 			
 			if (dream_in_edit.stability <= 0) {
 				show_message("Dream collapsed!")
