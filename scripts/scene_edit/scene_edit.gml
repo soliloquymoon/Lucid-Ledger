@@ -74,7 +74,7 @@ function scene_edit(){
 				scene_exit()
 			}
 			
-			dream_value_calculate(dream_in_edit)
+			dream_in_edit.recommended_value = dream_value_calculate(dream_in_edit)
 		}
 	}
 	

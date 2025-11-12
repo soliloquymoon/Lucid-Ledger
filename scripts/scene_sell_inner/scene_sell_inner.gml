@@ -123,6 +123,7 @@ function scene_sell_inner(){
 		}
 		if (draw_button_size(642, 276, 85, 46, "Decline")) {
 			show_message("Dream failed to sell!")
+			dream_recycle(dream_to_sell)
 			time_advance()
 			scene_exit()
 		}
