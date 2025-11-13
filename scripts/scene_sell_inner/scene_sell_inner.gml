@@ -1,6 +1,7 @@
 function scene_sell_inner(){
 	draw_set_color(0)
 	draw_text(10, 10, "sell inner scene")
+	draw_sprite(spr_bg_sell_inner, 0, 0, 0)
 	
 	if (player_offer > 0 && current_client == 0) {
 		if (irandom_range(1, 100) == 37) {
@@ -26,7 +27,7 @@ function scene_sell_inner(){
 		draw_sprite_stretched(spr_client, 0, 207, 103, 230, 480)
 	}
 	
-	draw_frame_solid(0, 576, 1366, 768 - 576)
+	draw_sprite(spr_table, 0, 0, 0)
 	draw_sprite_ext(spr_character_sell, 0, 0, 0, 0.3, 0.3, 0, -1, 1)
 	
 	dream_draw_item(150, 576 + 30, dream_to_sell)

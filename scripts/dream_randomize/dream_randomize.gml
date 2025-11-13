@@ -53,6 +53,7 @@ function dream_randomize(dream){
 		"Echo of the Void"
 	]
 	dream.dream_name = dream_names[irandom_range(0, array_length(dream_names) - 1)]
+	dream.icon_index = irandom_range(0, 5)
 	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
 	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
 	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])

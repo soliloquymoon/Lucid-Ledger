@@ -1,5 +1,6 @@
 function dream_create(){
 	dream_name = ""
+	icon_index = 0
 	tags = []
 	unlocks = [1, 0, 0, 0]
 	dream_value = 0
