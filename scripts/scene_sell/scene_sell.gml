@@ -7,7 +7,7 @@ function scene_sell(){
 	
 	var dream_sel = draw_dream_list(inventory, 3)
 	if (dream_sel != -1) {
-		if (show_question("Do you want sell this dream?")) {
+		if (show_question("Do you want sell this dream?\n\nTip: You can enhance the dream in the workshop.")) {
 			scene_into(SCENE.SELL_INNER)
 			dream_to_sell = inventory[dream_sel]
 			player_offer_pending = dream_to_sell.dream_value
@@ -16,6 +16,9 @@ function scene_sell(){
 			player_offer = 0
 		}
 	}
+	
+	draw_set_color(c_white)
+	if (array_length(inventory) == 0) draw_text(200, 350, "Empty... Maybe go buy a dream?")
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
 		scene_exit()
