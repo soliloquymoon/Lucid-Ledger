@@ -2,11 +2,12 @@ function scene_title(){
 	draw_set_color(0)
 	//draw_text(10, 10, "title scene")
 	// draw title background
-	// TODO
+	draw_sprite(spr_bg_title, 0, 0, 0)
 	
 	// draw title
 	draw_set_color(0)
-	draw_text(1366 / 2 - 100, 200, "Title")
+	//draw_text(1366 / 2 - 100, 200, "Title")
+	draw_sprite(spr_title, 0, 0, 0)
 	
 	// draw start button
 	draw_set_font(Font2)

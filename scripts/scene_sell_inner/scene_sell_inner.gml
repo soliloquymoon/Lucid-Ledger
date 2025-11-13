@@ -6,6 +6,7 @@ function scene_sell_inner(){
 	if (player_offer > 0 && current_client == 0) {
 		if (irandom_range(1, 100) == 37) {
 			current_client = 1;
+			client_type = irandom_range(0, 1);
 
 			client_init = 1;
 			client_rounds = 0;
@@ -24,11 +25,11 @@ function scene_sell_inner(){
 	}
 	
 	if (current_client) {
-		draw_sprite_stretched(spr_client, 0, 207, 103, 230, 480)
+		draw_sprite(spr_client, client_type, 0, 0)
 	}
 	
 	draw_sprite(spr_table, 0, 0, 0)
-	draw_sprite_ext(spr_character_sell, 0, 0, 0, 0.3, 0.3, 0, -1, 1)
+	draw_sprite_ext(spr_character_sell, 0, 0, 0, 1, 1, 0, -1, 1)
 	
 	dream_draw_item(150, 576 + 30, dream_to_sell)
 	set_tooltip(150, 576 + 30, 456, 138, "Bought for " + string(dream_to_sell.dream_value))
