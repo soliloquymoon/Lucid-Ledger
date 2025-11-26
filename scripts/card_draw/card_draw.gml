@@ -7,7 +7,7 @@ function card_draw(xx, yy, card, scale=1){
 	draw_sprite_ext(spr_card, 0, xx, yy, 0.5, 0.5, 0, -1, 1)
 	
 	//draw card icon
-	draw_sprite_stretched(spr_card_icon, card.icon_sprite, xx + 19 * scale, yy + 73 * scale, 133 * scale, 94 * scale)
+	draw_sprite_stretched(spr_card_icon, card.icon_sprite, xx + 40 * scale, yy + 73 * scale, 93 * scale, 93 * scale)
 	
 	draw_set_color(c_white)
 	var text_scale = 1
