@@ -14,7 +14,7 @@ function scene_upgrade(){
 	
 	
 	draw_set_font(Font1)
-	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
+	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {
 		scene_exit()
 	}
 }

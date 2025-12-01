@@ -7,15 +7,19 @@ function scene_inventory(){
 	
 	var dream_sel = draw_dream_list(inventory, 1)
 	if (dream_sel != -1) {
-		if (show_question("Do you want edit this dream?")) {
-			scene_into(SCENE.EDIT)
-			deck = []
-			hand = []
-			used = []
-			hand_limit = 3
-			array_copy(deck, 0, all_cards, 0, array_length(all_cards))
-			dream_in_edit = inventory[dream_sel]
-		}
+		set_popup("Inventory", "Do you want edit this dream?", spr_dream_icon, inventory[dream_sel].icon_index)
+		popup_temp_value = dream_sel
+	}
+	if (popup_temp_value != -1 && popup_choice = 1) {
+		scene_into(SCENE.EDIT)
+		deck = []
+		hand = []
+		used = []
+		hand_limit = 3
+		array_copy(deck, 0, all_cards, 0, array_length(all_cards))
+		dream_in_edit = inventory[popup_temp_value]
+		popup_choice = -1
+		popup_temp_value = -1
 	}
 	
 	draw_set_color(c_white)

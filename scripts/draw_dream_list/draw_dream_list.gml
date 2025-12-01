@@ -9,7 +9,7 @@ function draw_dream_list(dream_list, scr_id, display_price = 0){
 	var column = 0
 	var dream_sel = -1
 	for (var i = scr_value[scr_id] * 2; i < scr_value[scr_id] * 2 + display_length; i++) {
-		if (dream_draw_item(190 + 480 * column, 178 + 158 * row, dream_list[i], display_price)) {
+		if (dream_draw_item(190 + 480 * column, 178 + 158 * row, dream_list[i], display_price) && window = 0) {
 			if (mouse_check_button_released(mb_left)) dream_sel = i
 			window_set_cursor(cr_handpoint)
 		}
