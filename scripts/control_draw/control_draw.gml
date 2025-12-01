@@ -32,9 +32,8 @@ function control_draw(){
 		case SCENE.SELL_INNER:
 			scene_sell_inner()
 			break
-			break
 		case SCENE.UPGRADE:
-			scene_sell_inner()
+			scene_upgrade()
 			break
 			
 		case SCENE.CARDEDITOR:
@@ -45,4 +44,6 @@ function control_draw(){
 	if (tooltip_display) {
 		draw_tooltip(tooltip_x, tooltip_y, tooltip_w, tooltip_h, tooltip_str)
 	}
+	
+	draw_window()
 }

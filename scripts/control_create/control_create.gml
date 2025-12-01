@@ -20,6 +20,11 @@ function control_create(){
 		TEST1,
 		TEST2
 	}
+	enum WINDOWS {
+		NONE,
+		POPUP,
+		TEXT
+	}
 	scene = SCENE.TITLE
 	scene_stack = [SCENE.TITLE]
 	money = 2000 // Lunite
@@ -63,6 +68,13 @@ function control_create(){
 	bubble_next = []
 	bubble_name = ""
 	
+	popup_text = ""
+	popup_title = ""
+	popup_choice = -1
+	popup_icon = -1
+	popup_icon_index = -1
+	popup_temp_value = -1
+	
 	scr_value[100] = 0
 	scr_dragging[100] = 0
 	scr_drag = 0
@@ -73,6 +85,8 @@ function control_create(){
 	tooltip_h = 0
 	tooltip_str = ""
 	tooltip_display = 0
+	
+	window = 0
 	
 	current_event = "event_none"
 	

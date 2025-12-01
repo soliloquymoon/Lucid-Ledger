@@ -9,16 +9,19 @@ function scene_market(){
 	
 	var dream_sel = draw_dream_list(market, 0, 1)
 	if (dream_sel != -1) {
-		widget_set_caption("Lucid Ledger")
-		if (show_question("Do you want to buy this dream for " + string(market[dream_sel].dream_value) + " lunites?")) {
-			if (money >= market[dream_sel].dream_value) {
-				money -= market[dream_sel].dream_value
-				array_push(inventory, market[dream_sel])
-				array_delete(market, dream_sel, 1)
-			} else {
-				show_message("Not enough lunites.")
-			}
+		set_popup("Market", "Do you want to buy this dream for " + string(market[dream_sel].dream_value) + " lunites?", spr_dream_icon, market[dream_sel].icon_index)
+		popup_temp_value = dream_sel
+	}
+	if (popup_temp_value != -1 && popup_choice = 1) {
+		if (money >= market[popup_temp_value].dream_value) {
+			money -= market[popup_temp_value].dream_value
+			array_push(inventory, market[popup_temp_value])
+			array_delete(market, popup_temp_value, 1)
+		} else {
+			show_message("Not enough lunites.")
 		}
+		popup_choice = -1
+		popup_temp_value = -1
 	}
 	
 	draw_set_font(Font1)
