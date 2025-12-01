@@ -12,6 +12,7 @@ function control_create(){
 		INVENTORY,
 		SETTINGS,
 		SELL_INNER,
+		UPGRADE,
 		
 		CARDEDITOR
 	}
@@ -36,6 +37,7 @@ function control_create(){
 	dream_to_remove = -1
 	dream_id_counter = 0
 	hand_limit = 3
+	cyberwares_unlocked = []
 	
 	card_import_all()
 	array_copy(deck, 0, all_cards, 0, array_length(all_cards))
@@ -77,6 +79,7 @@ function control_create(){
 	tags = load_tags(working_directory + "tags.json")
 	events = load_events(working_directory + "events.json")
 	dream_stages = dream_load_stages(working_directory + "dream.json")
+	cyberwares = load_cyberwares(working_directory + "cyberware.json")
 	
 	event_randomize()
 }

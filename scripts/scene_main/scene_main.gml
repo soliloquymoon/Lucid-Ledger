@@ -9,6 +9,6 @@ function scene_main(){
 	draw_set_font(Font1)
 	if (draw_button_size(53, 655, 88, 88, "Settings")) scene_into(SCENE.SETTINGS)
 	if (draw_button_size(856 + 120, 655, 88, 88, "Market")) scene_into(SCENE.MARKET)
-	if (draw_button_size(856 + 120 + 120, 655, 88, 88, "Sell")) scene_into(SCENE.SELL)
-	if (draw_button_size(856 + 120 + 120 + 120, 655, 88, 88, "Workshop")) scene_into(SCENE.INVENTORY)
+	if (draw_button_size(856 + 120 + 120, 655, 88, 88, "Sell", array_length(inventory) = 0)) scene_into(SCENE.SELL)
+	if (draw_button_size(856 + 120 + 120 + 120, 655, 88, 88, "Workshop", array_length(inventory) = 0)) scene_into(SCENE.INVENTORY)
 }

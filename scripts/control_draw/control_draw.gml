@@ -32,6 +32,10 @@ function control_draw(){
 		case SCENE.SELL_INNER:
 			scene_sell_inner()
 			break
+			break
+		case SCENE.UPGRADE:
+			scene_sell_inner()
+			break
 			
 		case SCENE.CARDEDITOR:
 			scene_card_editor()

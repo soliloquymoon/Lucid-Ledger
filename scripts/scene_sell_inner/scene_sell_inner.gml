@@ -1,6 +1,6 @@
 function scene_sell_inner(){
 	draw_set_color(0)
-	draw_text(10, 10, "sell inner scene")
+	//draw_text(10, 10, "sell inner scene")
 	draw_sprite(spr_bg_sell_inner, 0, 0, 0)
 	
 	if (player_offer > 0 && current_client == 0) {
