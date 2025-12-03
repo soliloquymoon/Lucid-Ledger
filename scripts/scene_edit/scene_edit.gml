@@ -1,5 +1,6 @@
 function scene_edit(){
 	draw_set_color(0)
+	draw_sprite(spr_bg_generic, 0, 0, 0)
 	
 	if (!text_editing_shown) {
 		set_dialogue(0, text_editing, text_editing_role)
@@ -84,7 +85,7 @@ function scene_edit(){
 	}
 	
 	draw_set_font(Font2)
-	draw_set_color(0)
+	draw_set_color(c_white)
 	draw_text(1366 / 2 + 20, 200, "Emotion: " + string(dream_in_edit.emotion))
 	draw_text(1366 / 2 + 20, 300, "Clarity: " + string(dream_in_edit.clarity))
 	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
