@@ -8,5 +8,5 @@ function draw_lunite_display(xx, yy, amount){
 	
 	draw_set_font(Font2)
 	draw_set_color(c_white)
-	draw_text(xx + 50 + 150 / 2 - string_width(string(amount)) / 2, yy + 5, string(amount))
+	draw_text(xx + 50 + 150 / 2 - string_width(string(amount)) / 2, yy + 2, string(amount))
 }

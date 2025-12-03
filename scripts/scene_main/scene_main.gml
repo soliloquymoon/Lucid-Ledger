@@ -31,7 +31,7 @@ function scene_main(){
 	draw_set_alpha(0.5)
 	draw_frame_solid(39, 80 + 5, 1366 - 39 - 39, 78 - 10)
 	draw_set_alpha(1)
-	draw_text(39 + 85 + 10, 80 + 20, "Event: " + get_event(current_event).event_name)
+	draw_text(39 + 85 + 10, 80 + 20 - 2, "Event: " + get_event(current_event).event_name)
 	draw_sprite(spr_news_icon, 0, 39, 80)
 	if (button_area(39, 80, 85, 78) && (window = 0 || window = WINDOWS.ARROW)) {
 		set_newspaper(get_event(current_event).event_desc, get_event(current_event).event_name)

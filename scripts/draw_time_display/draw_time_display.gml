@@ -20,6 +20,6 @@ function draw_time_display(xx, yy, day, time){
 	
 	draw_set_font(Font2)
 	draw_set_color(c_white)
-	draw_text(xx + 150 / 2 - string_width(string(day)) / 2 + 20, yy + 5, string(day))
-	draw_text(xx + 200 + 150 / 2 - string_width(string(time)) / 2 + 20, yy + 5, string(time))
+	draw_text(xx + 150 / 2 - string_width(string(day)) / 2 + 20, yy + 2, string(day))
+	draw_text(xx + 200 + 150 / 2 - string_width(string(time)) / 2 + 20, yy + 2, string(time))
 }
