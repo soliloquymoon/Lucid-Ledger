@@ -25,11 +25,13 @@ function load_cyberwares(fn){
 	try {
 		var card_list = json_map
 		for (var i = 0; i < array_length(card_list); i++) {
-			var item = { cyberware_name: "", effect: "", cyberware_id: "", cost: 0 }
+			var item = { cyberware_name: "", effect: "", cyberware_id: "", cost: 0, part: "", level: 0 }
 			item.cyberware_name = variable_struct_get(card_list[i], "name")
 			item.effect = variable_struct_get(card_list[i], "effect")
 			item.cyberware_id = variable_struct_get(card_list[i], "id")
 			item.cost = variable_struct_get(card_list[i], "cost")
+			item.part = variable_struct_get(card_list[i], "part")
+			item.level = variable_struct_get(card_list[i], "level")
 			array_push(return_list, item)
 		}
 	}

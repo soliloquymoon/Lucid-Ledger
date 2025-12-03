@@ -43,7 +43,7 @@ function control_create(){
 	dream_to_remove = -1
 	dream_id_counter = 0
 	hand_limit = 3
-	cyberwares_unlocked = []
+	cyberwares_level = [0, 0, 0, 0]
 	cyberware_accessible = 0
 	
 	card_import_all()
