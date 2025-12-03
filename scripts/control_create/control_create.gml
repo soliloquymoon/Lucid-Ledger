@@ -29,7 +29,7 @@ function control_create(){
 	}
 	scene = SCENE.TITLE
 	scene_stack = [SCENE.TITLE]
-	money = 2000 // Lunite
+	money = 2500 // Lunite
 	day_counter = 1
 	rounds = 1
 	loan_amount = 0
