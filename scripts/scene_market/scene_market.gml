@@ -1,6 +1,7 @@
 function scene_market(){
 	draw_set_color(0)
 	//draw_text(10, 10, "market scene")
+	draw_sprite(spr_bg_main, 0, 0, 0)
 	
 	if (!text_market_shown) {
 		set_dialogue(0, text_market, text_market_role)

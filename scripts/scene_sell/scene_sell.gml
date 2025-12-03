@@ -1,6 +1,7 @@
 function scene_sell(){
 	draw_set_color(0)
 	//draw_text(10, 10, "sell scene")
+	draw_sprite(spr_bg_main, 0, 0, 0)
 	
 	if (!text_selling_shown) {
 		set_dialogue(0, text_selling, text_selling_role)

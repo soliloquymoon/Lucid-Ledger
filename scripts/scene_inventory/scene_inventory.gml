@@ -1,6 +1,7 @@
 function scene_inventory(){
 	draw_set_color(0)
 	//draw_text(10, 10, "inventory scene")
+	draw_sprite(spr_bg_main, 0, 0, 0)
 	
 	draw_lunite_display(39, 18, money)
 	draw_time_display(980, 18, string(day_counter), string(8 + (rounds - 1) * 3) + ":00")
