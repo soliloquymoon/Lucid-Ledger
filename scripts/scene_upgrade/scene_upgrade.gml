@@ -96,6 +96,11 @@ function scene_upgrade(){
 		if (money >= curr.cost) {
 			money -= curr.cost
 			cyberwares_level[popup_temp_value]++
+			if (popup_temp_value = 1) {
+				if (cyberwares_level[popup_temp_value] >= 1) emotion_init = 10
+				if (cyberwares_level[popup_temp_value] >= 2) clarity_init = 10
+				if (cyberwares_level[popup_temp_value] >= 3) stability_init = 11
+			}
 		} else {
 			show_message("Not enough lunites.")
 		}

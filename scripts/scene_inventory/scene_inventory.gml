@@ -17,7 +17,7 @@ function scene_inventory(){
 		hand = []
 		used = []
 		hand_limit = 3
-		array_copy(deck, 0, all_cards, 0, array_length(all_cards))
+		deck_init()
 		dream_in_edit = inventory[popup_temp_value]
 		popup_choice = -1
 		popup_temp_value = -1

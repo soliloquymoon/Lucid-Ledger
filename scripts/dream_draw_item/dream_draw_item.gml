@@ -15,7 +15,10 @@ function dream_draw_item(xx, yy, dream, display_price, scale = 1){
 	var tag_strs = ["", "", "", ""]
 	for (var i = 0; i < 4; i++) {
 		if (dream.unlocks[i] = 0) tag_strs[i] = "Locked"
-		else tag_strs[i] = dream.tags[i].tag_name
+		else {
+			tag_strs[i] = dream.tags[i].tag_name
+			if (cyberwares_level[2] >= 1) tag_strs[i] += "\nBase value: " + string(dream.tags[i].base_value)
+		}
 	}
 	if (dream.unlocks[0]) {
 		draw_sprite(spr_tag_back, 0, xx + 160 * scale, yy + 63 * scale)

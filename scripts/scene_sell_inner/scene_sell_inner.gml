@@ -74,6 +74,7 @@ function scene_sell_inner(){
 						var higher_offer = min(player_offer, client_willing_max)
 						client_offer = prev_offer + ((higher_offer - prev_offer) / 3) div 100;
 					}
+					if (cyberwares_level[3] >= 1) client_offer += 500
 				}
 
 				if (client_offer > 0) {

@@ -18,7 +18,7 @@ function reset(){
 	hand_limit = 3
 	cyberwares_level = [0, 0, 0, 0]
 	cyberware_accessible = 0
-	array_copy(deck, 0, all_cards, 0, array_length(all_cards))
+	deck_init()
 	card_in_edit = -100
 	edit_name_field = -200
 	edit_desc_field = -300

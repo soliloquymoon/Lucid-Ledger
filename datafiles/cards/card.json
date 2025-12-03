@@ -54,7 +54,7 @@
     "icon_index": 6,
     "description": "It is circumstance that dictates what is moral. Define the circumstances, and ethics is like clay in your hands. You are now able to replace the dream's initial tag with a different one.",
     "effects": { "clarity": 0, "emotion": 0, "stability": 0 },
-    "requisite": "des100",
+    "requisite": "arm1",
     "special": 1
   },
   {
@@ -62,7 +62,7 @@
     "icon_index": 7,
     "description": "One of our reality experiments has made light in dream significantly faster! The resulting increase in editing options is good, but we fear that there will also be long-term consequences for the stability. Things will return to normal eventually, but we might have to prepare for the worst until then. Enjoy the present! Reshuffle your entire hand and add a new strategy option.",
     "effects": { "clarity": 0, "emotion": 0, "stability": -1 },
-    "requisite": "des200",
+    "requisite": "arm2",
     "special": 2
   },
   {
@@ -70,14 +70,14 @@
     "icon_index": 8,
     "description": "The new technological breakthroughs have made it possible to conduct more in-depth editing of dreams, although such advancements may not follow Moore's Law.",
     "effects": { "clarity": 5, "emotion": 10, "stability": -1 },
-    "requisite": "des300"
+    "requisite": "arm3"
   },
   {
     "name": "Constant Rounding",
     "icon_index": 9,
     "description": "We have succeeded tremendously in making a precise but widespread edit to the dream. We have rounded down the mathematical constant of Pi, making calculating it much more manageable. Of course, the resulting changes have thrown off some of our mathematical and scientific models, but it is only temporary, everything will return to normal soon. Set the lower of clarity or emotion equal to the higher one.",
     "effects": { "clarity": 0, "emotion": 0, "stability": -1 },
-    "requisite": "des400",
+    "requisite": "arm4",
     "special": 3
   }  
 ]

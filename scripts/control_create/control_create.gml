@@ -47,8 +47,12 @@ function control_create(){
 	cyberwares_level = [0, 0, 0, 0]
 	cyberware_accessible = 0
 	
+	emotion_init = 0
+	clarity_init = 0
+	stability_init = 10
+	
 	card_import_all()
-	array_copy(deck, 0, all_cards, 0, array_length(all_cards))
+	deck_init()
 	
 	card_in_edit = -100
 	edit_name_field = -200

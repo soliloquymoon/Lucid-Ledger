@@ -34,7 +34,16 @@ function scene_main(){
 	draw_text(39 + 85 + 10, 80 + 20 - 2, "Event: " + get_event(current_event).event_name)
 	draw_sprite(spr_news_icon, 0, 39, 80)
 	if (button_area(39, 80, 85, 78) && (window = 0 || window = WINDOWS.ARROW)) {
-		set_newspaper(get_event(current_event).event_desc, get_event(current_event).event_name)
+		var newspaper_str = get_event(current_event).event_desc
+		if (cyberwares_level[2] >= 2) {
+			newspaper_str += "\n\nAffected tags: "
+			var tag_ids = variable_struct_get_names(get_event(current_event).effects)
+			for (var i = 0; i < array_length(tag_ids); i++) {
+				newspaper_str += get_tag(tag_ids[i]).tag_name
+				if (i != array_length(tag_ids) - 1) newspaper_str += ", "
+			}
+		}
+		set_newspaper(newspaper_str, get_event(current_event).event_name)
 		if (!text_newspaper_shown) {
 			set_dialogue(0, text_newspaper, text_newspaper_role)
 			text_newspaper_shown = 1

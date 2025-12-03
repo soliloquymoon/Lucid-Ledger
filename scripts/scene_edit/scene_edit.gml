@@ -67,7 +67,7 @@ function scene_edit(){
 			
 			dream_in_edit.unlocks[1] = (dream_in_edit.clarity >= 50)
 			dream_in_edit.unlocks[2] = (dream_in_edit.emotion >= 50)
-			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80)
+			dream_in_edit.unlocks[3] = (dream_in_edit.clarity >= 80 && dream_in_edit.emotion >= 80 && cyberwares_level[2] >= 3)
 			
 			if (dream_in_edit.stability <= 0) {
 				show_message("Dream collapsed!")

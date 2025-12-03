@@ -5,9 +5,9 @@ function dream_create(){
 	unlocks = [1, 0, 0, 0]
 	dream_value = 0
 	recommended_value = 0
-	stability = 10
-	emotion = 0
-	clarity = 0
+	stability = obj_controller.stability_init
+	emotion = obj_controller.emotion_init
+	clarity = obj_controller.clarity_init
 	dream_id = obj_controller.dream_id_counter
 	obj_controller.dream_id_counter++
 }
