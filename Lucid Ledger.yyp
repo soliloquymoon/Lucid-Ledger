@@ -92,7 +92,6 @@
     {"id":{"name":"draw_scrollbar","path":"scripts/draw_scrollbar/draw_scrollbar.yy",},"order":16,},
     {"id":{"name":"spr_emotion","path":"sprites/spr_emotion/spr_emotion.yy",},"order":14,},
     {"id":{"name":"set_popup","path":"scripts/set_popup/set_popup.yy",},"order":32,},
-    {"id":{"name":"card_export","path":"scripts/card_export/card_export.yy",},"order":4,},
     {"id":{"name":"load_events","path":"scripts/load_events/load_events.yy",},"order":25,},
     {"id":{"name":"card_create_from_json","path":"scripts/card_create_from_json/card_create_from_json.yy",},"order":1,},
     {"id":{"name":"scene_card_editor","path":"scripts/scene_card_editor/scene_card_editor.yy",},"order":5,},

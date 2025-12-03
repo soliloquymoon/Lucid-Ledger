@@ -52,7 +52,7 @@ function scene_card_editor(){
 	draw_text(1366 / 2 + 100, 520, "Stability Effect")
 	card_in_edit.stability_effect = draw_number_adjust(1366 / 2 + 100, 540, card_in_edit.stability_effect)
 	
-	if (draw_button_size(1366 / 2 - 60, 620, 120, 50, "Export")) card_export(card_in_edit)
+	//if (draw_button_size(1366 / 2 - 60, 620, 120, 50, "Export")) card_export(card_in_edit)
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
 		instance_destroy(edit_name_field)
