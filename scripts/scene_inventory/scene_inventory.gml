@@ -26,7 +26,7 @@ function scene_inventory(){
 	draw_set_color(c_white)
 	if (array_length(inventory) == 0) draw_text(200, 350, "Empty... Maybe go buy a dream?")
 	
-	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
+	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {
 		scene_exit()
 	}
 }
