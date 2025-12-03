@@ -1,6 +1,6 @@
 function draw_button_size(xx, yy, w, h, str, locked = 0){
 	draw_set_color(0)
-	var a = mouse_rectangle(xx, yy, w, h)
+	var a = mouse_rectangle(xx, yy, w, h) && window = 0
 	if (a) a += mouse_check_button(mb_left)
 	var button_index = a
 	if (locked) button_index = 3

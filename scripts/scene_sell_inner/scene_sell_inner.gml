@@ -112,6 +112,7 @@ function scene_sell_inner(){
 		draw_text(510, 204, bubble_str)
 		if (draw_button_size(526, 276, 85, 46, "Accept")) {
 			show_message("Dream sold!")
+			cyberware_accessible = 1
 			money += client_offer
 			schedule_dream_removal(dream_to_sell)
 			for (var i = 0; i < array_length(inventory); i++) {

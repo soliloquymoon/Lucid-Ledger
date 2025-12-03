@@ -2,6 +2,11 @@ function scene_upgrade(){
 	draw_set_color(0)
 	//draw_text(10, 10, "upgrade scene")
 	
+	if (!text_skill_shown) {
+		set_dialogue(1, text_skill)
+		text_skill_shown = 1
+	}
+	
 	draw_sprite(spr_bg_upgrade, 0, 0, 0)
 	
 	draw_sprite(spr_upgrades, 0, 146, 92)

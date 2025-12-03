@@ -1,5 +1,4 @@
-{
-  "cyberware": [
+[
     {
       "name": "Synaptic Conduit Bracer",
       "id": "arm1",
@@ -67,4 +66,3 @@
       "cost": 1500
     }
   ]
-}

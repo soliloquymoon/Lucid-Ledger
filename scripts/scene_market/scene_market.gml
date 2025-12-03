@@ -2,6 +2,11 @@ function scene_market(){
 	draw_set_color(0)
 	//draw_text(10, 10, "market scene")
 	
+	if (!text_market_shown) {
+		set_dialogue(1, text_market)
+		text_market_shown = 1
+	}
+	
 	market_fill()
 	
 	draw_lunite_display(39, 18, money)

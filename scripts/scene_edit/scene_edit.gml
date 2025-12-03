@@ -1,6 +1,11 @@
 function scene_edit(){
 	draw_set_color(0)
 	
+	if (!text_editing_shown) {
+		set_dialogue(1, text_editing)
+		text_editing_shown = 1
+	}
+	
 	dream_draw_item(200, 200, dream_in_edit, 0)
 	
 	var card_width = sprite_get_width(spr_card) * 0.5

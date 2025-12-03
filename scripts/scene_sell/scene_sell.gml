@@ -2,6 +2,11 @@ function scene_sell(){
 	draw_set_color(0)
 	//draw_text(10, 10, "sell scene")
 	
+	if (!text_selling_shown) {
+		set_dialogue(1, text_selling)
+		text_selling_shown = 1
+	}
+	
 	draw_lunite_display(39, 18, money)
 	draw_time_display(980, 18, string(day_counter), string(8 + (rounds - 1) * 3) + ":00")
 	
