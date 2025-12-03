@@ -23,7 +23,7 @@ function scene_edit(){
 	var card_sel = -1
 	
 	for (var i = 0; i < array_length(hand); i++) {
-		if (card_draw(card_x + (card_width + spacing) * i, card_y, hand[i]) && mouse_check_button_released(mb_left)) card_sel = i
+		if (card_draw(card_x + (card_width + spacing) * i, card_y, hand[i]) && mouse_check_button_released(mb_left) && window = 0) card_sel = i
 	}
 	
 	if (card_sel != -1)	{

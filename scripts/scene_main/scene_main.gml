@@ -35,5 +35,5 @@ function scene_main(){
 	if (draw_button_size(856 + 120, 655, 88, 88, "Market", text_newspaper_shown = 0) && window = 0) scene_into(SCENE.MARKET)
 	if (draw_button_size(856 + 120 + 120, 655, 88, 88, "Sell", array_length(inventory) = 0 || text_editing_shown = 0) && window = 0) scene_into(SCENE.SELL)
 	if (draw_button_size(856 + 120 + 120 + 120, 655, 88, 88, "Workshop", array_length(inventory) = 0) && window = 0) scene_into(SCENE.INVENTORY)
-	if (draw_button_size(856 + 120 + 120 + 120, 655 - 100, 88, 88, "Cyberwares", cyberware_accessible = 0) && window = 0) scene_into(SCENE.UPGRADE)
+	if (draw_button_size(856 + 120 + 120 + 120, 655 - 100, 88, 88, "Cyberware", cyberware_accessible = 0) && window = 0) scene_into(SCENE.UPGRADE)
 }
