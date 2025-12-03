@@ -89,7 +89,7 @@ function scene_edit(){
 	draw_text(1366 / 2 + 20, 300, "Clarity: " + string(dream_in_edit.clarity))
 	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
 	
-	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back")) {
+	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {
 		scene_exit()
 	}
 }
