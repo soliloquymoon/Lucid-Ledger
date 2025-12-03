@@ -41,6 +41,7 @@ function scene_edit(){
 			switch (curr_card.special) {
 				case 1: {
 					// TODO: make able to replace initial tag
+					dream_in_edit.tags[0] = tags[irandom_range(0, array_length(tags) - 1)]
 					break
 				}
 				case 2: {
