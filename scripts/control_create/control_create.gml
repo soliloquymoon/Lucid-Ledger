@@ -153,6 +153,8 @@ function control_create(){
 	
 	config_sounds = 1
 	
+	check_money = 0
+	
 	current_event = "event_none"
 	
 	tags = load_tags(working_directory + "tags.json")

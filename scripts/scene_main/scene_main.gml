@@ -4,6 +4,16 @@ function scene_main(){
 	draw_sprite(spr_bg_main, 0, 0, 0)
 	if (bg_music = -1 && config_sounds) bg_music = audio_play_sound(snd_bg, 1, 1, 0.5)
 	
+	if (check_money) {
+		if (array_length(inventory) = 0) {
+			if (money < 1200) {
+				show_message("GAME OVER!!\n\nYou are bankrupt!")
+				reset()
+			}
+		}
+		check_money = 0
+	}
+	
 	if (!text_prologue_shown) {
 		set_dialogue(0, text_prologue, text_prologue_role)
 		text_prologue_shown = 1
