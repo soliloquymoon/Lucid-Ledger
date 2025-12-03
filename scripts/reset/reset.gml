@@ -73,5 +73,8 @@ function reset(){
 	tooltip_str = ""
 	tooltip_display = 0
 	window = 0
+	
+	audio_stop_all()
+	bg_music = -1
 	event_randomize()
 }

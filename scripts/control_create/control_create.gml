@@ -149,6 +149,10 @@ function control_create(){
 	
 	window = 0
 	
+	bg_music = -1
+	
+	config_sounds = 1
+	
 	current_event = "event_none"
 	
 	tags = load_tags(working_directory + "tags.json")
