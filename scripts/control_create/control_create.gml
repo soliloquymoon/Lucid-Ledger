@@ -161,6 +161,7 @@ function control_create(){
 	events = load_events(working_directory + "events.json")
 	dream_stages = dream_load_stages(working_directory + "dream.json")
 	cyberwares = load_cyberwares(working_directory + "cyberware.json")
+	cyberwares_max_lvl = [4, 3, 3, 1]
 	
 	event_randomize()
 }
