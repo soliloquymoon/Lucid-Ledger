@@ -5,5 +5,5 @@ function window_text(){
 	draw_text(196, 294, text_line_break(newspaper_title, 974))
 	draw_text(196, 394, text_line_break(newspaper_text, 974))
 	
-	if (mouse_check_button_pressed(mb_left)) window = 0
+	if (mouse_check_button_pressed(mb_left) && window = WINDOWS.TEXT) window = 0
 }

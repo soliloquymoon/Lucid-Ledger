@@ -23,6 +23,7 @@ function control_create(){
 	enum WINDOWS {
 		NONE,
 		POPUP,
+		ARROW,
 		TEXT,
 		DIALOGUE
 	}
@@ -87,6 +88,11 @@ function control_create(){
 	newspaper_text = ""
 	newspaper_title = ""
 	
+	arrow_pos = [0, 0]
+	arrow_offset = 0
+	arrow_move_direction = 0
+	arrow_direction = 0
+	
 	scr_value[100] = 0
 	scr_dragging[100] = 0
 	scr_drag = 0
@@ -136,6 +142,8 @@ function control_create(){
 	"Finally, some good news."]
 	text_skill_role = [1, 0, 1, 0]
 	text_skill_shown = 0
+	
+	arrow_newspaper_shown = 0
 	
 	text_roles = ["Julia", "Alpha"]
 	
