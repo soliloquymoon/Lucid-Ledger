@@ -1,16 +1,20 @@
 function window_dialogue(){
 	var text = dialogue_text[dialogue_progress]
+	var name = text_roles[dialogue_roles[dialogue_progress]]
 	
 	if (dialogue_type = 0) {
 		draw_set_color(c_white)
 		draw_set_font(Font2)
 		text = text_line_break(text, 1200)
 		//draw character art here
+		draw_sprite_ext(spr_character, (dialogue_roles[dialogue_progress] = 0), 0, 0, 1, 1, 0, (dialogue_roles[dialogue_progress] = 0 ? -1 : c_gray), 1)
+		draw_sprite_ext(spr_drone, (dialogue_roles[dialogue_progress] = 1), 0, 0, 1, 1, 0, (dialogue_roles[dialogue_progress] = 1 ? -1 : c_gray), 1)
 		
 		draw_set_alpha(0.5)
 		draw_frame_solid(0, 500, 1366, 268)
 		draw_set_alpha(1)
 		
+		draw_text(40, 510, name)
 		draw_text(83, 550, string_copy(text, 0, dialogue_text_progress))
 		
 		if (dialogue_text_progress = string_length(text)) draw_sprite(spr_next, 0, 1366 - 50, 768 - 50)
@@ -19,6 +23,7 @@ function window_dialogue(){
 		draw_set_font(Font1)
 		text = text_line_break(text, 378)
 		draw_frame_solid(50, 50, 450, 198)
+		draw_text(40, 60, name)
 		draw_text(86, 86, string_copy(text, 0, dialogue_text_progress))
 		
 		if (dialogue_text_progress = string_length(text)) draw_sprite(spr_next, 0, 450 + 20, 198 + 20)

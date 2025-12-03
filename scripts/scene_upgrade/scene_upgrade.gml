@@ -3,7 +3,7 @@ function scene_upgrade(){
 	//draw_text(10, 10, "upgrade scene")
 	
 	if (!text_skill_shown) {
-		set_dialogue(1, text_skill)
+		set_dialogue(0, text_skill, text_skill_role)
 		text_skill_shown = 1
 	}
 	

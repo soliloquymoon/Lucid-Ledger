@@ -3,7 +3,7 @@ function scene_market(){
 	//draw_text(10, 10, "market scene")
 	
 	if (!text_market_shown) {
-		set_dialogue(1, text_market)
+		set_dialogue(0, text_market, text_market_role)
 		text_market_shown = 1
 	}
 	

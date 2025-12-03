@@ -2,7 +2,7 @@ function scene_edit(){
 	draw_set_color(0)
 	
 	if (!text_editing_shown) {
-		set_dialogue(1, text_editing)
+		set_dialogue(0, text_editing, text_editing_role)
 		text_editing_shown = 1
 	}
 	

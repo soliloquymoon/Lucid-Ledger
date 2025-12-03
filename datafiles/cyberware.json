@@ -3,7 +3,7 @@
       "name": "Synaptic Conduit Bracer",
       "id": "arm1",
       "part": "arm",
-      "level": 1
+      "level": 1,
       "effect": "Unlock card: Artificial Moral Codes.",
       "cost": 1200
     },
@@ -11,7 +11,7 @@
       "name": "Somno-Weave Actuator",
       "id": "arm2",
       "part": "arm",
-      "level": 2
+      "level": 2,
       "effect": "Unlock card: Superlight.",
       "cost": 1400
     },
@@ -19,7 +19,7 @@
       "name": "Lucid Cortex Gauntlet",
       "id": "arm3",
       "part": "arm",
-      "level": 3
+      "level": 3,
       "effect": "Unlock card: Brain-Computer Interface.",
       "cost": 1600
     },
@@ -27,7 +27,7 @@
       "name": "Astral Pulse Injector",
       "id": "arm4",
       "part": "arm",
-      "level": 4
+      "level": 4,
       "effect": "Unlock card: Constant Rounding.",
       "cost": 1800
     },
@@ -35,7 +35,7 @@
       "name": "Kiroshi Optics",
       "id": "eye1",
       "part": "eye",
-      "level": 1
+      "level": 1,
       "effect": "10 initial value assigned to Emotion.",
       "cost": 1500
     },
@@ -43,7 +43,7 @@
       "name": "Clairvoyant",
       "id": "eye2",
       "part": "eye",
-      "level": 2
+      "level": 2,
       "effect": "10 initial value assigned to Clarity.",
       "cost": 1500
     },
@@ -51,7 +51,7 @@
       "name": "The Oracle",
       "id": "eye3",
       "part": "eye",
-      "level": 3
+      "level": 3,
       "effect": "+1 initial Stability value.",
       "cost": 1500
     },
@@ -59,7 +59,7 @@
       "name": "Apogee Tagscan",
       "id": "system1",
       "part": "system",
-      "level": 1
+      "level": 1,
       "effect": "Able to see the tag value.",
       "cost": 1500
     },
@@ -67,7 +67,7 @@
       "name": "Falcon EventLink",
       "id": "system2",
       "part": "system",
-      "level": 2
+      "level": 2,
       "effect": "Able to see the event effect range.",
       "cost": 1500
     },
@@ -75,7 +75,7 @@
       "name": "Relic: Scure Your Sour",
       "id": "system3",
       "part": "system",
-      "level": 3
+      "level": 3,
       "effect": "Unlock Final tag slot when Emotion or Clarity reaches 100.",
       "cost": 1500
     },
@@ -83,7 +83,7 @@
       "name": "Emotional Resonator",
       "id": "Circulation1",
       "part": "circulation",
-      "level": 1
+      "level": 1,
       "effect": "Customers now able to offer higher price.",
       "cost": 1500
     }

@@ -3,7 +3,7 @@ function scene_sell(){
 	//draw_text(10, 10, "sell scene")
 	
 	if (!text_selling_shown) {
-		set_dialogue(1, text_selling)
+		set_dialogue(0, text_selling, text_selling_role)
 		text_selling_shown = 1
 	}
 	
