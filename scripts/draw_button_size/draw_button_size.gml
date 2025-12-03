@@ -4,7 +4,9 @@ function draw_button_size(xx, yy, w, h, str, locked = 0){
 	if (a) a += mouse_check_button(mb_left)
 	var button_index = a
 	if (locked) button_index = 3
-	draw_sprite_stretched(spr_button, button_index, xx, yy, w, h)
+	draw_sprite_stretched(spr_button_left, button_index, xx, yy, 16, h)
+	draw_sprite_stretched(spr_button, button_index, xx + 16, yy, w - 32, h)
+	draw_sprite_stretched(spr_button_right, button_index, xx + w - 16, yy, 16, h)
 	//draw_rectangle(xx, yy, xx + w - 1, yy + h - 1, 0)
 	draw_set_color(c_white)
 	draw_text(xx + w / 2 - string_width(str) / 2, yy + h / 2 - string_height(str) / 2, str)
