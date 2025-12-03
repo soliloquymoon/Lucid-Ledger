@@ -84,6 +84,9 @@ function control_create(){
 	dialogue_text_timer = 0
 	dialogue_type = 0
 	
+	newspaper_text = ""
+	newspaper_title = ""
+	
 	scr_value[100] = 0
 	scr_dragging[100] = 0
 	scr_drag = 0

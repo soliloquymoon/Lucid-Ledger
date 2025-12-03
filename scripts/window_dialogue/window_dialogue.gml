@@ -41,7 +41,7 @@ function window_dialogue(){
 				dialogue_text_progress = 0
 				dialogue_text_timer = current_time
 			} else {
-				window = 0
+				window -= WINDOWS.DIALOGUE
 			}
 		}
 	} else {

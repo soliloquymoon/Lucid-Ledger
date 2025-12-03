@@ -15,5 +15,9 @@ function draw_window(){
 		case WINDOWS.DIALOGUE:
 			window_dialogue()
 			break
+		case WINDOWS.TEXT + WINDOWS.DIALOGUE:
+			window_text()
+			window_dialogue()
+			break
 	}
 }

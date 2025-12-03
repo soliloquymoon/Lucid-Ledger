@@ -5,5 +5,5 @@ function set_dialogue(type, texts, roles){
 	dialogue_progress = 0
 	dialogue_text_progress = 0
 	dialogue_text_timer = 0
-	window = WINDOWS.DIALOGUE
+	window += WINDOWS.DIALOGUE
 }
