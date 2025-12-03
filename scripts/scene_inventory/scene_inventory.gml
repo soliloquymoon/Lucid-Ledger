@@ -27,6 +27,7 @@ function scene_inventory(){
 	if (array_length(inventory) == 0) draw_text(200, 350, "Empty... Maybe go buy a dream?")
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {
+		check_money = 1
 		scene_exit()
 	}
 }
