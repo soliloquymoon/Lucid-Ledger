@@ -101,6 +101,8 @@ function control_create(){
 	scr_dragging[100] = 0
 	scr_drag = 0
 	
+	card_hover[100] = 0
+	
 	tooltip_x = 0
 	tooltip_y = 0
 	tooltip_w = 0

@@ -7,12 +7,14 @@ function scene_edit(){
 		text_editing_shown = 1
 	}
 	
-	dream_draw_item(200, 200, dream_in_edit, 0)
+	draw_sprite(spr_ui_edit, 0, 0, 0)
+	
+	dream_draw_item_edit(160, 78, dream_in_edit, 0)
 	
 	var card_width = sprite_get_width(spr_card) * 0.5
 	var card_height = sprite_get_height(spr_card) * 0.5
 	var spacing = 20
-	var card_y = 500
+	var card_y = 570
 	var card_x = 1366 / 2 - (card_width * array_length(hand) + spacing * (array_length(hand) - 1)) / 2
 	
 	if (array_length(deck) = 0) deck_fill()
@@ -24,7 +26,12 @@ function scene_edit(){
 	var card_sel = -1
 	
 	for (var i = 0; i < array_length(hand); i++) {
-		if (card_draw(card_x + (card_width + spacing) * i, card_y, hand[i]) && mouse_check_button_released(mb_left) && window = 0) card_sel = i
+		if (card_draw(card_x + (card_width + spacing) * i, card_y - 70 * card_hover[i], hand[i]) && window = 0) {
+			if (mouse_check_button_released(mb_left)) card_sel = i
+			card_hover[i] = 1
+		} else {
+			card_hover[i] = 0
+		}
 	}
 	
 	if (card_sel != -1)	{
@@ -33,6 +40,29 @@ function scene_edit(){
 			dream_in_edit.clarity += curr_card.clarity_effect
 			dream_in_edit.emotion += curr_card.emotion_effect
 			dream_in_edit.stability += curr_card.stability_effect
+			
+			if (curr_card.clarity_effect != 0) {
+				var str = string(curr_card.clarity_effect)
+				if (str > 0) str = "+" + str
+				var type = 0
+				if (str > 0) type += 3
+				set_edit_popup(1057, 104 - 80, type, str)
+				show_debug_message("clarity popup")
+			}
+			if (curr_card.emotion_effect != 0) {
+				var str = string(curr_card.emotion_effect)
+				if (str > 0) str = "+" + str
+				var type = 1
+				if (str > 0) type += 3
+				set_edit_popup(1057, 264 - 80, type, str)
+			}
+			if (curr_card.stability_effect != 0) {
+				var str = string(curr_card.stability_effect)
+				if (str > 0) str = "+" + str
+				var type = 2
+				if (str > 0) type += 3
+				set_edit_popup(1057, 424 - 80, type, str)
+			}
 			
 			array_push(used, hand[card_sel])
 			array_delete(hand, card_sel, 1)
@@ -87,9 +117,9 @@ function scene_edit(){
 	
 	draw_set_font(Font2)
 	draw_set_color(c_white)
-	draw_text(1366 / 2 + 20, 200, "Emotion: " + string(dream_in_edit.emotion))
-	draw_text(1366 / 2 + 20, 300, "Clarity: " + string(dream_in_edit.clarity))
-	draw_text(1366 / 2 + 20, 400, "Stability: " + string(dream_in_edit.stability))
+	draw_text(1110, 101, string(dream_in_edit.emotion))
+	draw_text(1110, 256, string(dream_in_edit.clarity))
+	draw_text(1110, 414, string(dream_in_edit.stability))
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {
 		scene_exit()
