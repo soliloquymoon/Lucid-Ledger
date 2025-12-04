@@ -6,7 +6,6 @@ function reset(){
 	rounds = 1
 	loan_amount = 0
 	loan_due_date = -1
-	all_cards = []
 	deck = []
 	hand = []
 	used = []

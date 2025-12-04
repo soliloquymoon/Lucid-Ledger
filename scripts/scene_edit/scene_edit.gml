@@ -42,15 +42,14 @@ function scene_edit(){
 			dream_in_edit.stability += curr_card.stability_effect
 			
 			if (curr_card.clarity_effect != 0) {
-				var str = string(curr_card.clarity_effect)
+				var str = string(curr_card.emotion_effect)
 				if (str > 0) str = "+" + str
 				var type = 0
 				if (str > 0) type += 3
 				set_edit_popup(1057, 104 - 80, type, str)
-				show_debug_message("clarity popup")
 			}
 			if (curr_card.emotion_effect != 0) {
-				var str = string(curr_card.emotion_effect)
+				var str = string(curr_card.clarity_effect)
 				if (str > 0) str = "+" + str
 				var type = 1
 				if (str > 0) type += 3
@@ -117,8 +116,8 @@ function scene_edit(){
 	
 	draw_set_font(Font2)
 	draw_set_color(c_white)
-	draw_text(1110, 101, string(dream_in_edit.emotion))
-	draw_text(1110, 256, string(dream_in_edit.clarity))
+	draw_text(1110, 256, string(dream_in_edit.emotion))
+	draw_text(1110, 101, string(dream_in_edit.clarity))
 	draw_text(1110, 414, string(dream_in_edit.stability))
 	
 	if (draw_button_size(10, 768 - 100 - 10, 120, 100, "Back") && window = 0) {

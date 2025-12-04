@@ -26,6 +26,8 @@ function scene_main(){
 		}
 	}
 	
+	//if (keyboard_check_pressed(ord("C"))) time_advance()
+	
 	draw_lunite_display(39, 18, money)
 	draw_time_display(980, 18, string(day_counter), string(8 + (rounds - 1) * 3) + ":00")
 	draw_set_alpha(0.5)
