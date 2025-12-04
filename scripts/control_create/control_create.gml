@@ -133,8 +133,9 @@ function control_create(){
 	text_market = ["This is the Dream Market — where buying someone’s subconscious is legally acceptable… for now.",
 	"So I buy a dream I can afford and start editing it?",
 	"Exactly. Each dream has a base value and an initial tag. You can buy additional tags to improve its final selling price.",
+	"The tag market can be accessed by clicking the blue arrow on the right.",
 	"Just don’t overspend before you’ve even earned your first rent payment."]
-	text_market_role = [1, 0, 1, 1]
+	text_market_role = [1, 0, 1, 1, 1]
 	text_market_shown = 0
 	text_editing = ["Here is your editing station. Try not to unplug anything important — some wires are older than the city grid.",
 	"And what exactly do I do here?",
