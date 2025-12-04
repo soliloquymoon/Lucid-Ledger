@@ -102,6 +102,11 @@ function control_create(){
 	scr_drag = 0
 	
 	card_hover[100] = 0
+	for (var i = 0; i < 100; i++) {
+		scr_value[i] = 0
+		scr_dragging[i] = 0
+		card_hover[i] = 0
+	}
 	
 	tooltip_x = 0
 	tooltip_y = 0
