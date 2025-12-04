@@ -35,8 +35,10 @@ function scene_sell_inner(){
 	set_tooltip(150, 576 + 30, 456, 138, "Bought for " + string(dream_to_sell.dream_value))
 	
 	if (player_offer_edit) {
-		draw_text(688, 622, "Make an offer!")
-		player_offer_pending = draw_number_adjust(688, 642, player_offer_pending, 10)
+		draw_set_font(Font2)
+		draw_text(688, 582, "Make an offer!")
+		draw_set_font(Font1)
+		player_offer_pending = draw_number_adjust(688, 632, player_offer_pending, 10)
 		if (draw_button_size(688, 672, 50, 50, "OK")) {
 			player_offer_edit = 0
 			player_offer = player_offer_pending
@@ -96,6 +98,7 @@ function scene_sell_inner(){
 	if (client_offer = -10) {
 		client_offer = 0
 		show_message("Dream sold!")
+		cyberware_accessible = 1
 		money += player_offer
 		schedule_dream_removal(dream_to_sell)
 		for (var i = 0; i < array_length(inventory); i++) {
