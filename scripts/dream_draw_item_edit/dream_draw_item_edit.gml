@@ -8,36 +8,58 @@ function dream_draw_item_edit(xx, yy, dream, display_price, scale = 1){
 	var tag_strs = ["", "", "", ""]
 	for (var i = 0; i < 4; i++) {
 		if (dream.unlocks[i] = 0) tag_strs[i] = "Locked"
+		else if (dream.tags[i].tag_name = "") tag_strs[i] = "None"
 		else {
 			tag_strs[i] = dream.tags[i].tag_name
 			if (cyberwares_level[2] >= 1) tag_strs[i] += "\nBase value: " + string(dream.tags[i].base_value)
+		}
+		if (dream.unlocks[i] != 0) {
+			if (i = 0) {
+				if (initial_replacable) tag_strs[i] += "\nClick to replace"
+			} else tag_strs[i] += "\nClick to replace"
 		}
 	}
 	gpu_set_tex_filter(0)
 	if (dream.unlocks[0]) {
 		draw_sprite_ext(spr_tag_back, 0, xx, yy + 234 * scale, 2 * scale, 2 * scale, 0, -1, 1)
 		draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[0], 1)) mod 4, xx, yy + 234 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (button_area(xx, yy + 234 * scale, 116 * scale, 36 * scale) && initial_replacable && window = 0) {
+			tag_to_replace = 0
+			scene_into(SCENE.TAG_CHOOSE)
+		}
 	} else {
 		draw_sprite_ext(spr_tag_back, 4, xx, yy + 234 * scale, 2 * scale, 2 * scale, 0, -1, 1)
 	}
 	set_tooltip(xx, yy + 234 * scale, 116 * scale, 36 * scale, tag_strs[0])
 	if (dream.unlocks[1]) {
-		draw_sprite_ext(spr_tag_back, 0, xx, yy + 286 * scale, 2 * scale, 2 * scale, 0, -1, 1)
-		draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[1], 1)) mod 4, xx, yy + 286 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		draw_sprite_ext(spr_tag_back, 3 * (dream.tags[1].tag_name = ""), xx, yy + 286 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (dream.tags[1].tag_name != "") draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[1], 1)) mod 4, xx, yy + 286 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (button_area(xx, yy + 286 * scale, 116 * scale, 36 * scale) && window = 0) {
+			tag_to_replace = 1
+			scene_into(SCENE.TAG_CHOOSE)
+		}
 	} else {
 		draw_sprite_ext(spr_tag_back, 4, xx, yy + 286 * scale, 2 * scale, 2 * scale, 0, -1, 1)
 	}
 	set_tooltip(xx, yy + 286 * scale, 116 * scale, 36 * scale, tag_strs[1])
 	if (dream.unlocks[2]) {
-		draw_sprite_ext(spr_tag_back, 0, xx, yy + 334 * scale, 2 * scale, 2 * scale, 0, -1, 1)
-		draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[2], 1)) mod 4, xx, yy + 334 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		draw_sprite_ext(spr_tag_back, 3 * (dream.tags[2].tag_name = ""), xx, yy + 334 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (dream.tags[2].tag_name != "") draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[2], 1)) mod 4, xx, yy + 334 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (button_area(xx, yy + 334 * scale, 116 * scale, 36 * scale) && window = 0) {
+			tag_to_replace = 2
+			scene_into(SCENE.TAG_CHOOSE)
+		}
 	} else {
 		draw_sprite_ext(spr_tag_back, 4, xx, yy + 334 * scale, 2 * scale, 2 * scale, 0, -1, 1)
 	}
 	set_tooltip(xx, yy + 334 * scale, 116 * scale, 36 * scale, tag_strs[2])
 	if (dream.unlocks[3]) {
-		draw_sprite_ext(spr_tag_back, 0, xx, yy + 383 * scale, 2 * scale, 2 * scale, 0, -1, 1)
-		draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[3], 1)) mod 4, xx, yy + 383 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		draw_sprite_ext(spr_tag_back, 3 * (dream.tags[3].tag_name = ""), xx, yy + 383 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (dream.tags[3].tag_name != "") draw_sprite_ext(spr_trend_indicator, ord(string_char_at(tag_strs[3], 1)) mod 4, xx, yy + 383 * scale, 2 * scale, 2 * scale, 0, -1, 1)
+		if (button_area(xx, yy + 383 * scale, 116 * scale, 36 * scale) && window = 0) {
+			tag_to_replace = 3
+			scene_into(SCENE.TAG_CHOOSE)
+		}
 	} else {
 		draw_sprite_ext(spr_tag_back, 4, xx, yy + 383 * scale, 2 * scale, 2 * scale, 0, -1, 1)
 	}

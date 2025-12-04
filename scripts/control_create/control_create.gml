@@ -13,6 +13,7 @@ function control_create(){
 		SETTINGS,
 		SELL_INNER,
 		UPGRADE,
+		TAG_CHOOSE,
 		
 		CARDEDITOR
 	}
@@ -46,6 +47,8 @@ function control_create(){
 	hand_limit = 3
 	cyberwares_level = [0, 0, 0, 0]
 	cyberware_accessible = 0
+	market_page = 0
+	initial_replacable = 0
 	
 	emotion_init = 0
 	clarity_init = 0
@@ -60,6 +63,7 @@ function control_create(){
 	
 	dream_in_edit = -1
 	dream_to_sell = -1
+	tag_to_replace = 0
 	
 	current_client = 0
 	player_offer = 0

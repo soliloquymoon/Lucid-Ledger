@@ -20,6 +20,6 @@ function draw_dream_list(dream_list, scr_id, display_price = 0){
 		}
 	}
 	
-	draw_scrollbar(0, 1171, 97, 0, array_length(dream_list) div 2, 1, 583)
+	draw_scrollbar(scr_id, 1171, 97, 0, array_length(dream_list) div 2, 1, 583)
 	return dream_sel
 }

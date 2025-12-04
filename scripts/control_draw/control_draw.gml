@@ -35,6 +35,9 @@ function control_draw(){
 		case SCENE.UPGRADE:
 			scene_upgrade()
 			break
+		case SCENE.TAG_CHOOSE:
+			scene_tag_choose()
+			break
 			
 		case SCENE.CARDEDITOR:
 			scene_card_editor()

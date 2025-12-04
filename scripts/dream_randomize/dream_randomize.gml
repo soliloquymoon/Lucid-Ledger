@@ -55,9 +55,9 @@ function dream_randomize(dream){
 	dream.dream_name = dream_names[irandom_range(0, array_length(dream_names) - 1)]
 	dream.icon_index = irandom_range(0, 5)
 	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
-	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
-	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
-	array_push(dream.tags, tags[irandom_range(0, array_length(tags) - 1)])
+	array_push(dream.tags, { tag_name: "", tag_desc: "", tag_id: "", base_value: 0 })
+	array_push(dream.tags, { tag_name: "", tag_desc: "", tag_id: "", base_value: 0 })
+	array_push(dream.tags, { tag_name: "", tag_desc: "", tag_id: "", base_value: 0 })
 	dream.dream_value = irandom_range(120, 160) * 10
 	dream.recommended_value = dream_value_calculate(dream)
 }

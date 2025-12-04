@@ -2,7 +2,9 @@ function window_popup(){
 	draw_sprite(spr_upgrade_popup, 0, 0, 0)
 	
 	if (popup_icon != -1 && popup_icon_index != -1) {
+		gpu_set_tex_filter(0)
 		draw_sprite_stretched(popup_icon, popup_icon_index, 184, 128, 214, 214)
+		gpu_set_tex_filter(1)
 	}
 	
 	draw_set_font(Font2)

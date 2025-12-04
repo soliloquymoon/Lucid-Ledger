@@ -22,9 +22,12 @@ function reset(){
 	card_in_edit = -100
 	edit_name_field = -200
 	edit_desc_field = -300
+	market_page = 0
+	initial_replacable = 0
 	
 	dream_in_edit = -1
 	dream_to_sell = -1
+	tag_to_replace = 0
 	
 	current_client = 0
 	player_offer = 0
@@ -62,9 +65,13 @@ function reset(){
 	arrow_move_direction = 0
 	arrow_direction = 0
 	
-	scr_value[100] = 0
-	scr_dragging[100] = 0
 	scr_drag = 0
+	
+	for (var i = 0; i < 100; i++) {
+		scr_value[i] = 0
+		scr_dragging[i] = 0
+		card_hover[i] = 0
+	}
 	
 	tooltip_x = 0
 	tooltip_y = 0
