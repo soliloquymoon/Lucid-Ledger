@@ -46,14 +46,14 @@ function scene_edit(){
 				if (str > 0) str = "+" + str
 				var type = 0
 				if (str > 0) type += 3
-				set_edit_popup(1057, 104 - 80, type, str)
+				set_edit_popup(1057, 264 - 80, type, str)
 			}
 			if (curr_card.emotion_effect != 0) {
 				var str = string(curr_card.clarity_effect)
 				if (str > 0) str = "+" + str
 				var type = 1
 				if (str > 0) type += 3
-				set_edit_popup(1057, 264 - 80, type, str)
+				set_edit_popup(1057, 104 - 80, type, str)
 			}
 			if (curr_card.stability_effect != 0) {
 				var str = string(curr_card.stability_effect)
