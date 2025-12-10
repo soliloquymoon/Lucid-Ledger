@@ -1,4 +1,5 @@
-<img width="128" height="128" alt="ll-appicon" src="https://github.com/user-attachments/assets/f4d3e213-22f2-4d96-9771-0efef04bfcd3" />
+<img width="1366" height="384" alt="banner" src="https://github.com/user-attachments/assets/7e380bc3-1bd6-423c-a673-1a2bc2ac8c63" />
+
 <h1>Lucid Ledger</h1>
 
 <b>Lucid Ledger</b> is a deck-based business simulation game in a futuristic fantasy world. As the dream accountant, you buy dreams from the market, edit them with cards to increase their value, and sell them in the market.
